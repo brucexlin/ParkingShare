@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "PKRevealController.h"
+#import "MapViewController.h"
 
 @interface AppDelegate () <PKRevealing>
 
@@ -23,8 +24,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     // Step 1: Create your controllers.
-    UIViewController *frontViewController = [[UIViewController alloc] init];
-    frontViewController.view.backgroundColor = [UIColor orangeColor];
+    MapViewController *frontViewController = [[MapViewController alloc] init];
+    
     
     UINavigationController *frontNavigationController = [[UINavigationController alloc] initWithRootViewController:frontViewController];
     UIViewController *rightViewController = [[UIViewController alloc] init];
