@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		845331081AD9DD0E00957647 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 845331071AD9DD0E00957647 /* main.m */; };
+		8453310B1AD9DD0E00957647 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453310A1AD9DD0E00957647 /* AppDelegate.m */; };
+		8453310E1AD9DD0E00957647 /* ParkingShare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8453310C1AD9DD0E00957647 /* ParkingShare.xcdatamodeld */; };
+		845331111AD9DD0E00957647 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845331101AD9DD0E00957647 /* ViewController.m */; };
+		845331161AD9DD0E00957647 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845331151AD9DD0E00957647 /* Images.xcassets */; };
+		845331191AD9DD0E00957647 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845331171AD9DD0E00957647 /* LaunchScreen.xib */; };
+		845331251AD9DD0E00957647 /* ParkingShareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 845331241AD9DD0E00957647 /* ParkingShareTests.m */; };
+		8453314B1AD9DD4900957647 /* CAAnimation+PKIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 845331311AD9DD4900957647 /* CAAnimation+PKIdentifier.m */; };
+		8453314C1AD9DD4900957647 /* CALayer+PKConvenienceAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 845331331AD9DD4900957647 /* CALayer+PKConvenienceAnimations.m */; };
+		8453314D1AD9DD4900957647 /* NSObject+PKBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 845331351AD9DD4900957647 /* NSObject+PKBlocks.m */; };
+		8453314E1AD9DD4900957647 /* UIViewController+PKRevealController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845331371AD9DD4900957647 /* UIViewController+PKRevealController.m */; };
+		8453314F1AD9DD4900957647 /* PKRevealControllerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453313A1AD9DD4900957647 /* PKRevealControllerView.m */; };
+		845331501AD9DD4900957647 /* PKAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453313F1AD9DD4900957647 /* PKAnimation.m */; };
+		845331511AD9DD4900957647 /* PKLayerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 845331411AD9DD4900957647 /* PKLayerAnimator.m */; };
+		845331521AD9DD4900957647 /* PKSequentialAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 845331431AD9DD4900957647 /* PKSequentialAnimation.m */; };
+		845331531AD9DD4900957647 /* PKLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 845331461AD9DD4900957647 /* PKLog.m */; };
+		845331541AD9DD4900957647 /* PKRevealController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453314A1AD9DD4900957647 /* PKRevealController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8453311F1AD9DD0E00957647 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845330FA1AD9DD0E00957647 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 845331011AD9DD0E00957647;
+			remoteInfo = ParkingShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		845331021AD9DD0E00957647 /* ParkingShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		845331061AD9DD0E00957647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845331071AD9DD0E00957647 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		845331091AD9DD0E00957647 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8453310A1AD9DD0E00957647 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8453310D1AD9DD0E00957647 /* ParkingShare.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ParkingShare.xcdatamodel; sourceTree = "<group>"; };
+		8453310F1AD9DD0E00957647 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		845331101AD9DD0E00957647 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		845331151AD9DD0E00957647 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		845331181AD9DD0E00957647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8453311E1AD9DD0E00957647 /* ParkingShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParkingShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		845331231AD9DD0E00957647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845331241AD9DD0E00957647 /* ParkingShareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParkingShareTests.m; sourceTree = "<group>"; };
+		845331301AD9DD4900957647 /* CAAnimation+PKIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+PKIdentifier.h"; sourceTree = "<group>"; };
+		845331311AD9DD4900957647 /* CAAnimation+PKIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+PKIdentifier.m"; sourceTree = "<group>"; };
+		845331321AD9DD4900957647 /* CALayer+PKConvenienceAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+PKConvenienceAnimations.h"; sourceTree = "<group>"; };
+		845331331AD9DD4900957647 /* CALayer+PKConvenienceAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+PKConvenienceAnimations.m"; sourceTree = "<group>"; };
+		845331341AD9DD4900957647 /* NSObject+PKBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PKBlocks.h"; sourceTree = "<group>"; };
+		845331351AD9DD4900957647 /* NSObject+PKBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PKBlocks.m"; sourceTree = "<group>"; };
+		845331361AD9DD4900957647 /* UIViewController+PKRevealController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PKRevealController.h"; sourceTree = "<group>"; };
+		845331371AD9DD4900957647 /* UIViewController+PKRevealController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PKRevealController.m"; sourceTree = "<group>"; };
+		845331391AD9DD4900957647 /* PKRevealControllerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKRevealControllerView.h; sourceTree = "<group>"; };
+		8453313A1AD9DD4900957647 /* PKRevealControllerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKRevealControllerView.m; sourceTree = "<group>"; };
+		8453313D1AD9DD4900957647 /* PKAnimating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKAnimating.h; sourceTree = "<group>"; };
+		8453313E1AD9DD4900957647 /* PKAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKAnimation.h; sourceTree = "<group>"; };
+		8453313F1AD9DD4900957647 /* PKAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKAnimation.m; sourceTree = "<group>"; };
+		845331401AD9DD4900957647 /* PKLayerAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKLayerAnimator.h; sourceTree = "<group>"; };
+		845331411AD9DD4900957647 /* PKLayerAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLayerAnimator.m; sourceTree = "<group>"; };
+		845331421AD9DD4900957647 /* PKSequentialAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKSequentialAnimation.h; sourceTree = "<group>"; };
+		845331431AD9DD4900957647 /* PKSequentialAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKSequentialAnimation.m; sourceTree = "<group>"; };
+		845331451AD9DD4900957647 /* PKLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKLog.h; sourceTree = "<group>"; };
+		845331461AD9DD4900957647 /* PKLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKLog.m; sourceTree = "<group>"; };
+		845331481AD9DD4900957647 /* PKRevealController-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PKRevealController-Prefix.pch"; sourceTree = "<group>"; };
+		845331491AD9DD4900957647 /* PKRevealController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKRevealController.h; sourceTree = "<group>"; };
+		8453314A1AD9DD4900957647 /* PKRevealController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKRevealController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		845330FF1AD9DD0E00957647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8453311B1AD9DD0E00957647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		845330F91AD9DD0E00957647 = {
+			isa = PBXGroup;
+			children = (
+				845331041AD9DD0E00957647 /* ParkingShare */,
+				845331211AD9DD0E00957647 /* ParkingShareTests */,
+				845331031AD9DD0E00957647 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		845331031AD9DD0E00957647 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				845331021AD9DD0E00957647 /* ParkingShare.app */,
+				8453311E1AD9DD0E00957647 /* ParkingShareTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		845331041AD9DD0E00957647 /* ParkingShare */ = {
+			isa = PBXGroup;
+			children = (
+				8453312E1AD9DD4900957647 /* PKRevealController */,
+				845331091AD9DD0E00957647 /* AppDelegate.h */,
+				8453310A1AD9DD0E00957647 /* AppDelegate.m */,
+				8453310F1AD9DD0E00957647 /* ViewController.h */,
+				845331101AD9DD0E00957647 /* ViewController.m */,
+				845331151AD9DD0E00957647 /* Images.xcassets */,
+				845331171AD9DD0E00957647 /* LaunchScreen.xib */,
+				8453310C1AD9DD0E00957647 /* ParkingShare.xcdatamodeld */,
+				845331051AD9DD0E00957647 /* Supporting Files */,
+			);
+			path = ParkingShare;
+			sourceTree = "<group>";
+		};
+		845331051AD9DD0E00957647 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				845331061AD9DD0E00957647 /* Info.plist */,
+				845331071AD9DD0E00957647 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		845331211AD9DD0E00957647 /* ParkingShareTests */ = {
+			isa = PBXGroup;
+			children = (
+				845331241AD9DD0E00957647 /* ParkingShareTests.m */,
+				845331221AD9DD0E00957647 /* Supporting Files */,
+			);
+			path = ParkingShareTests;
+			sourceTree = "<group>";
+		};
+		845331221AD9DD0E00957647 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				845331231AD9DD0E00957647 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8453312E1AD9DD4900957647 /* PKRevealController */ = {
+			isa = PBXGroup;
+			children = (
+				8453312F1AD9DD4900957647 /* Categories */,
+				845331381AD9DD4900957647 /* Classes */,
+				8453313B1AD9DD4900957647 /* Modules */,
+				845331471AD9DD4900957647 /* Other Sources */,
+				845331491AD9DD4900957647 /* PKRevealController.h */,
+				8453314A1AD9DD4900957647 /* PKRevealController.m */,
+			);
+			path = PKRevealController;
+			sourceTree = "<group>";
+		};
+		8453312F1AD9DD4900957647 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				845331301AD9DD4900957647 /* CAAnimation+PKIdentifier.h */,
+				845331311AD9DD4900957647 /* CAAnimation+PKIdentifier.m */,
+				845331321AD9DD4900957647 /* CALayer+PKConvenienceAnimations.h */,
+				845331331AD9DD4900957647 /* CALayer+PKConvenienceAnimations.m */,
+				845331341AD9DD4900957647 /* NSObject+PKBlocks.h */,
+				845331351AD9DD4900957647 /* NSObject+PKBlocks.m */,
+				845331361AD9DD4900957647 /* UIViewController+PKRevealController.h */,
+				845331371AD9DD4900957647 /* UIViewController+PKRevealController.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		845331381AD9DD4900957647 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				845331391AD9DD4900957647 /* PKRevealControllerView.h */,
+				8453313A1AD9DD4900957647 /* PKRevealControllerView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8453313B1AD9DD4900957647 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8453313C1AD9DD4900957647 /* PKLayerAnimator */,
+				845331441AD9DD4900957647 /* PKLog */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8453313C1AD9DD4900957647 /* PKLayerAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				8453313D1AD9DD4900957647 /* PKAnimating.h */,
+				8453313E1AD9DD4900957647 /* PKAnimation.h */,
+				8453313F1AD9DD4900957647 /* PKAnimation.m */,
+				845331401AD9DD4900957647 /* PKLayerAnimator.h */,
+				845331411AD9DD4900957647 /* PKLayerAnimator.m */,
+				845331421AD9DD4900957647 /* PKSequentialAnimation.h */,
+				845331431AD9DD4900957647 /* PKSequentialAnimation.m */,
+			);
+			path = PKLayerAnimator;
+			sourceTree = "<group>";
+		};
+		845331441AD9DD4900957647 /* PKLog */ = {
+			isa = PBXGroup;
+			children = (
+				845331451AD9DD4900957647 /* PKLog.h */,
+				845331461AD9DD4900957647 /* PKLog.m */,
+			);
+			path = PKLog;
+			sourceTree = "<group>";
+		};
+		845331471AD9DD4900957647 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				845331481AD9DD4900957647 /* PKRevealController-Prefix.pch */,
+			);
+			path = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		845331011AD9DD0E00957647 /* ParkingShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845331281AD9DD0E00957647 /* Build configuration list for PBXNativeTarget "ParkingShare" */;
+			buildPhases = (
+				845330FE1AD9DD0E00957647 /* Sources */,
+				845330FF1AD9DD0E00957647 /* Frameworks */,
+				845331001AD9DD0E00957647 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParkingShare;
+			productName = ParkingShare;
+			productReference = 845331021AD9DD0E00957647 /* ParkingShare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8453311D1AD9DD0E00957647 /* ParkingShareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8453312B1AD9DD0E00957647 /* Build configuration list for PBXNativeTarget "ParkingShareTests" */;
+			buildPhases = (
+				8453311A1AD9DD0E00957647 /* Sources */,
+				8453311B1AD9DD0E00957647 /* Frameworks */,
+				8453311C1AD9DD0E00957647 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				845331201AD9DD0E00957647 /* PBXTargetDependency */,
+			);
+			name = ParkingShareTests;
+			productName = ParkingShareTests;
+			productReference = 8453311E1AD9DD0E00957647 /* ParkingShareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		845330FA1AD9DD0E00957647 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Qing Sun";
+				TargetAttributes = {
+					845331011AD9DD0E00957647 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					8453311D1AD9DD0E00957647 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 845331011AD9DD0E00957647;
+					};
+				};
+			};
+			buildConfigurationList = 845330FD1AD9DD0E00957647 /* Build configuration list for PBXProject "ParkingShare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 845330F91AD9DD0E00957647;
+			productRefGroup = 845331031AD9DD0E00957647 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				845331011AD9DD0E00957647 /* ParkingShare */,
+				8453311D1AD9DD0E00957647 /* ParkingShareTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		845331001AD9DD0E00957647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845331191AD9DD0E00957647 /* LaunchScreen.xib in Resources */,
+				845331161AD9DD0E00957647 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8453311C1AD9DD0E00957647 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		845330FE1AD9DD0E00957647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8453310E1AD9DD0E00957647 /* ParkingShare.xcdatamodeld in Sources */,
+				8453314D1AD9DD4900957647 /* NSObject+PKBlocks.m in Sources */,
+				8453310B1AD9DD0E00957647 /* AppDelegate.m in Sources */,
+				845331111AD9DD0E00957647 /* ViewController.m in Sources */,
+				845331521AD9DD4900957647 /* PKSequentialAnimation.m in Sources */,
+				845331081AD9DD0E00957647 /* main.m in Sources */,
+				845331531AD9DD4900957647 /* PKLog.m in Sources */,
+				8453314B1AD9DD4900957647 /* CAAnimation+PKIdentifier.m in Sources */,
+				8453314E1AD9DD4900957647 /* UIViewController+PKRevealController.m in Sources */,
+				8453314F1AD9DD4900957647 /* PKRevealControllerView.m in Sources */,
+				845331511AD9DD4900957647 /* PKLayerAnimator.m in Sources */,
+				845331541AD9DD4900957647 /* PKRevealController.m in Sources */,
+				8453314C1AD9DD4900957647 /* CALayer+PKConvenienceAnimations.m in Sources */,
+				845331501AD9DD4900957647 /* PKAnimation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8453311A1AD9DD0E00957647 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845331251AD9DD0E00957647 /* ParkingShareTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		845331201AD9DD0E00957647 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 845331011AD9DD0E00957647 /* ParkingShare */;
+			targetProxy = 8453311F1AD9DD0E00957647 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		845331171AD9DD0E00957647 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				845331181AD9DD0E00957647 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		845331261AD9DD0E00957647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		845331271AD9DD0E00957647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		845331291AD9DD0E00957647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ParkingShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8453312A1AD9DD0E00957647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ParkingShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8453312C1AD9DD0E00957647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ParkingShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParkingShare.app/ParkingShare";
+			};
+			name = Debug;
+		};
+		8453312D1AD9DD0E00957647 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ParkingShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParkingShare.app/ParkingShare";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		845330FD1AD9DD0E00957647 /* Build configuration list for PBXProject "ParkingShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845331261AD9DD0E00957647 /* Debug */,
+				845331271AD9DD0E00957647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		845331281AD9DD0E00957647 /* Build configuration list for PBXNativeTarget "ParkingShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845331291AD9DD0E00957647 /* Debug */,
+				8453312A1AD9DD0E00957647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8453312B1AD9DD0E00957647 /* Build configuration list for PBXNativeTarget "ParkingShareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8453312C1AD9DD0E00957647 /* Debug */,
+				8453312D1AD9DD0E00957647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8453310C1AD9DD0E00957647 /* ParkingShare.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8453310D1AD9DD0E00957647 /* ParkingShare.xcdatamodel */,
+			);
+			currentVersion = 8453310D1AD9DD0E00957647 /* ParkingShare.xcdatamodel */;
+			path = ParkingShare.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 845330FA1AD9DD0E00957647 /* Project object */;
+}
