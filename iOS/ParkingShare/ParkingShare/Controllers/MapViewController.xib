@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController">
             <connections>
+                <outlet property="mapView" destination="icJ-6y-nwu" id="nT2-yr-Bus"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -57,14 +58,15 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QBH-Wh-Vf5" userLabel="MapView">
                     <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                     <subviews>
-                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Rsx-eW-Z3y">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icJ-6y-nwu" userLabel="BMK Map" customClass="BMKMapView">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
-                        </mapView>
-                        <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdO-2s-S06">
+                            <color key="backgroundColor" red="0.58693544708029199" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdO-2s-S06" customClass="BMKMapView">
                             <rect key="frame" x="6" y="475" width="588" height="55"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fyl-1L-LJ8">
-                                    <rect key="frame" x="-6" y="-539" width="44" height="20.5"/>
+                                    <rect key="frame" x="-6" y="-539" width="44" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
@@ -78,13 +80,13 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="Rsx-eW-Z3y" firstAttribute="leading" secondItem="QBH-Wh-Vf5" secondAttribute="leading" id="9EP-VP-EzG"/>
-                        <constraint firstAttribute="bottom" secondItem="AdO-2s-S06" secondAttribute="bottom" constant="6" id="RuD-J9-hnE"/>
-                        <constraint firstItem="AdO-2s-S06" firstAttribute="leading" secondItem="QBH-Wh-Vf5" secondAttribute="leading" constant="6" id="S5x-1V-u1D"/>
-                        <constraint firstItem="Rsx-eW-Z3y" firstAttribute="top" secondItem="QBH-Wh-Vf5" secondAttribute="top" id="V6p-it-FAV"/>
-                        <constraint firstAttribute="bottom" secondItem="Rsx-eW-Z3y" secondAttribute="bottom" id="baM-1f-eb7"/>
-                        <constraint firstAttribute="trailing" secondItem="AdO-2s-S06" secondAttribute="trailing" constant="6" id="jL7-Ss-dL6"/>
-                        <constraint firstAttribute="trailing" secondItem="Rsx-eW-Z3y" secondAttribute="trailing" id="oNk-zH-ves"/>
+                        <constraint firstAttribute="trailing" secondItem="AdO-2s-S06" secondAttribute="trailing" constant="6" id="7iz-XR-fcq"/>
+                        <constraint firstItem="icJ-6y-nwu" firstAttribute="top" secondItem="QBH-Wh-Vf5" secondAttribute="top" id="EhB-AZ-2WF"/>
+                        <constraint firstItem="AdO-2s-S06" firstAttribute="leading" secondItem="QBH-Wh-Vf5" secondAttribute="leading" constant="6" id="QjF-Fd-prm"/>
+                        <constraint firstAttribute="bottom" secondItem="AdO-2s-S06" secondAttribute="bottom" constant="6" id="WIF-1K-tps"/>
+                        <constraint firstAttribute="trailing" secondItem="icJ-6y-nwu" secondAttribute="trailing" id="ih6-1x-Wox"/>
+                        <constraint firstAttribute="bottom" secondItem="icJ-6y-nwu" secondAttribute="bottom" id="jM3-TP-GB9"/>
+                        <constraint firstItem="icJ-6y-nwu" firstAttribute="leading" secondItem="QBH-Wh-Vf5" secondAttribute="leading" id="jpq-Ru-4O2"/>
                     </constraints>
                 </view>
             </subviews>
