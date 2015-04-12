@@ -8,10 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+#define VC(X) \
+((X *)[[MasterViewController instance] getViewController:@#X])
+
 @interface MasterViewController : UIViewController
 
 @property (readonly, strong, nonatomic) UIViewController *currentViewController;
 
+@property (strong, nonatomic) UIViewController *rootViewController;
+
++ (MasterViewController *)instance;
+
+- (void)registerViewController:(UIViewController *)viewController;
+
 - (void)jumpToViewController:(NSString *)viewControllerName;
+
+- (UIViewController *)getViewController:(NSString *)viewControllerName;
 
 @end

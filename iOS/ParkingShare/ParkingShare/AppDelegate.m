@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "PKRevealController.h"
+#import "RootViewController.h"
 #import "MapViewController.h"
 
 @interface AppDelegate () <PKRevealing>
@@ -22,16 +22,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.masterViewController = [[MasterViewController alloc] init];
+    MasterViewController *mvc = [MasterViewController instance];
     
-    [self.masterViewController jumpToViewController:@"MapViewController"];
+    [mvc jumpToViewController:@"MapViewController"];
     
     self.leftMenuController = [[LeftMenuViewController alloc] init];
     // Step 2: Instantiate.
-    self.revealController = [PKRevealController revealControllerWithFrontViewController:self.masterViewController
+    self.revealController = [RootViewController revealControllerWithFrontViewController:mvc
                                                                      leftViewController:self.leftMenuController
                                                                     rightViewController:nil];
-    
 
     // Step 3: Configure.
     self.revealController.delegate = self;

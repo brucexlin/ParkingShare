@@ -7,6 +7,9 @@
 //
 
 #import "MapViewController.h"
+#import "MasterViewController.h"
+#import "RootViewController.h"
+#import "ParkingLotModel.h"
 #import <BaiduMapAPI/BMapKit.h>
 
 @interface MapViewController ()
@@ -48,14 +51,30 @@
     self.mapView.delegate = nil;
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)menuButtonPressed:(id)sender {
+    RootViewController *rootViewController = VC(RootViewController);
+    [VC(RootViewController) showViewController:rootViewController.leftViewController];
 }
-*/
+
+- (void)listViewButtonPressed:(id)sender {
+    
+}
+
+- (void)hudReservePressed:(LocationHUDView *)sender {
+    
+}
+
+- (void)hudCancelPressed:(LocationHUDView *)sender {
+    
+}
+
+- (void)hudNavigatePressed:(LocationHUDView *)sender {
+    
+}
+
+- (void)hudInfoPressed:(LocationHUDView *)sender {
+    
+}
 
 @end
