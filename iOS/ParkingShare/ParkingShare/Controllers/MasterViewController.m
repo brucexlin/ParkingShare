@@ -18,6 +18,15 @@
 
 @implementation MasterViewController
 
++ (MasterViewController *)instance {
+    static MasterViewController *instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[MasterViewController alloc] init];
+    });
+    return instance;
+}
+
 - (instancetype)init {
     self = [super init];
     if (self) {
@@ -26,7 +35,11 @@
     return self;
 }
 
-- (void)jumpToViewController:(NSString *)viewControllerName {
+- (void)registerViewController:(UIViewController *)viewController {
+    [self.viewControllerDict setObject:viewController forKey:NSStringFromClass([viewController class])];
+}
+
+- (UIViewController *)getViewController:(NSString *)viewControllerName {
     UIViewController *viewController = [_viewControllerDict objectForKey:viewControllerName];
     if (!viewController) {
         if ([NSClassFromString(viewControllerName) isSubclassOfClass:[UIViewController class]]) {
@@ -34,6 +47,11 @@
             [_viewControllerDict setObject:viewController forKey:viewControllerName];
         }
     }
+    return viewController;
+}
+
+- (void)jumpToViewController:(NSString *)viewControllerName {
+    UIViewController *viewController = [self getViewController:viewControllerName];
     if (viewController) {
         [self.view addSubview:viewController.view];
         [self.view bringSubviewToFront:viewController.view];

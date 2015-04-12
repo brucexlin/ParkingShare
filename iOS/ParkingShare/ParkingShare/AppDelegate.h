@@ -15,7 +15,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) MasterViewController *masterViewController;
 @property (strong, nonatomic) LeftMenuViewController *leftMenuController;
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
