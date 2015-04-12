@@ -26,6 +26,11 @@
 		8453318A1AD9E32E00957647 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845331881AD9E32E00957647 /* MapViewController.m */; };
 		8453318B1AD9E32E00957647 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845331891AD9E32E00957647 /* MapViewController.xib */; };
 		8453318D1AD9E44A00957647 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8453318C1AD9E44A00957647 /* MapKit.framework */; };
+		845331961AD9F04000957647 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845331941AD9F04000957647 /* MasterViewController.m */; };
+		845331971AD9F04000957647 /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845331951AD9F04000957647 /* MasterViewController.xib */; };
+		8453319B1AD9F52A00957647 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845331991AD9F52A00957647 /* LeftMenuViewController.m */; };
+		8453319C1AD9F52A00957647 /* LeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8453319A1AD9F52A00957647 /* LeftMenuViewController.xib */; };
+		8453319F1AD9FB2600957647 /* angela.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8453319E1AD9FB2600957647 /* angela.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +81,13 @@
 		845331881AD9E32E00957647 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		845331891AD9E32E00957647 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapViewController.xib; path = ../Controllers/MapViewController.xib; sourceTree = "<group>"; };
 		8453318C1AD9E44A00957647 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		845331931AD9F04000957647 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		845331941AD9F04000957647 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		845331951AD9F04000957647 /* MasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MasterViewController.xib; path = ../Controllers/MasterViewController.xib; sourceTree = "<group>"; };
+		845331981AD9F52A00957647 /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
+		845331991AD9F52A00957647 /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
+		8453319A1AD9F52A00957647 /* LeftMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LeftMenuViewController.xib; path = ../Controllers/LeftMenuViewController.xib; sourceTree = "<group>"; };
+		8453319E1AD9FB2600957647 /* angela.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angela.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +131,7 @@
 		845331041AD9DD0E00957647 /* ParkingShare */ = {
 			isa = PBXGroup;
 			children = (
+				8453319D1AD9FB2600957647 /* Resources */,
 				845331841AD9E2B300957647 /* Xibs */,
 				845331831AD9E27900957647 /* Controllers */,
 				845331801AD9E20400957647 /* Model */,
@@ -264,6 +277,10 @@
 			children = (
 				845331871AD9E32E00957647 /* MapViewController.h */,
 				845331881AD9E32E00957647 /* MapViewController.m */,
+				845331931AD9F04000957647 /* MasterViewController.h */,
+				845331941AD9F04000957647 /* MasterViewController.m */,
+				845331981AD9F52A00957647 /* LeftMenuViewController.h */,
+				845331991AD9F52A00957647 /* LeftMenuViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -272,8 +289,18 @@
 			isa = PBXGroup;
 			children = (
 				845331891AD9E32E00957647 /* MapViewController.xib */,
+				845331951AD9F04000957647 /* MasterViewController.xib */,
+				8453319A1AD9F52A00957647 /* LeftMenuViewController.xib */,
 			);
 			path = Xibs;
+			sourceTree = "<group>";
+		};
+		8453319D1AD9FB2600957647 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8453319E1AD9FB2600957647 /* angela.jpeg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,9 +383,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845331971AD9F04000957647 /* MasterViewController.xib in Resources */,
 				845331191AD9DD0E00957647 /* LaunchScreen.xib in Resources */,
 				8453318B1AD9E32E00957647 /* MapViewController.xib in Resources */,
+				8453319C1AD9F52A00957647 /* LeftMenuViewController.xib in Resources */,
 				845331161AD9DD0E00957647 /* Images.xcassets in Resources */,
+				8453319F1AD9FB2600957647 /* angela.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,11 +408,13 @@
 			files = (
 				845331751AD9E1EE00957647 /* NSObject+PKBlocks.m in Sources */,
 				8453310E1AD9DD0E00957647 /* ParkingShare.xcdatamodeld in Sources */,
+				8453319B1AD9F52A00957647 /* LeftMenuViewController.m in Sources */,
 				845331761AD9E1EE00957647 /* UIViewController+PKRevealController.m in Sources */,
 				8453317B1AD9E1EE00957647 /* PKLog.m in Sources */,
 				845331781AD9E1EE00957647 /* PKAnimation.m in Sources */,
 				8453317A1AD9E1EE00957647 /* PKSequentialAnimation.m in Sources */,
 				8453310B1AD9DD0E00957647 /* AppDelegate.m in Sources */,
+				845331961AD9F04000957647 /* MasterViewController.m in Sources */,
 				845331771AD9E1EE00957647 /* PKRevealControllerView.m in Sources */,
 				845331741AD9E1EE00957647 /* CALayer+PKConvenienceAnimations.m in Sources */,
 				845331791AD9E1EE00957647 /* PKLayerAnimator.m in Sources */,
@@ -427,7 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -443,7 +475,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -468,7 +500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -485,7 +517,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = c11;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -503,6 +535,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				GCC_C_LANGUAGE_STANDARD = c11;
 				INFOPLIST_FILE = ParkingShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +547,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				GCC_C_LANGUAGE_STANDARD = c11;
 				INFOPLIST_FILE = ParkingShare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

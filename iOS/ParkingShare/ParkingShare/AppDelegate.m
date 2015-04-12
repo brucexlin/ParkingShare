@@ -22,25 +22,24 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.masterViewController = [[MasterViewController alloc] init];
     
-    // Step 1: Create your controllers.
-    MapViewController *frontViewController = [[MapViewController alloc] init];
+    [self.masterViewController jumpToViewController:@"MapViewController"];
     
-    
-    UINavigationController *frontNavigationController = [[UINavigationController alloc] initWithRootViewController:frontViewController];
-    UIViewController *rightViewController = [[UIViewController alloc] init];
-    rightViewController.view.backgroundColor = [UIColor redColor];
-    
+    self.leftMenuController = [[LeftMenuViewController alloc] init];
     // Step 2: Instantiate.
-    self.revealController = [PKRevealController revealControllerWithFrontViewController:frontNavigationController
-                                                                     leftViewController:[self leftViewController]
-                                                                    rightViewController:[self rightViewController]];
+    self.revealController = [PKRevealController revealControllerWithFrontViewController:self.masterViewController
+                                                                     leftViewController:self.leftMenuController
+                                                                    rightViewController:nil];
+    
+
     // Step 3: Configure.
     self.revealController.delegate = self;
     self.revealController.animationDuration = 0.25;
     
     // Step 4: Apply.
     self.window.rootViewController = self.revealController;
+    
     
     [self.window makeKeyAndVisible];
     return YES;
@@ -151,40 +150,40 @@
 }
 
 
-- (UIViewController *)leftViewController
-{
-    UIViewController *leftViewController = [[UIViewController alloc] init];
-    leftViewController.view.backgroundColor = [UIColor yellowColor];
-    
-    UIButton *presentationModeButton = [[UIButton alloc] initWithFrame:CGRectMake(20.0, 60.0, 180.0, 30.0)];
-    [presentationModeButton setTitle:@"Presentation Mode" forState:UIControlStateNormal];
-    [presentationModeButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [presentationModeButton addTarget:self.revealController
-                               action:@selector(startPresentationMode)
-                     forControlEvents:UIControlEventTouchUpInside];
-    
-    [leftViewController.view addSubview:presentationModeButton];
-    
-    return leftViewController;
-}
+//- (UIViewController *)leftViewController
+//{
+//    UIViewController *leftViewController = [[UIViewController alloc] init];
+//    leftViewController.view.backgroundColor = [UIColor yellowColor];
+//    
+//    UIButton *presentationModeButton = [[UIButton alloc] initWithFrame:CGRectMake(20.0, 60.0, 180.0, 30.0)];
+//    [presentationModeButton setTitle:@"Presentation Mode" forState:UIControlStateNormal];
+//    [presentationModeButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    [presentationModeButton addTarget:self.revealController
+//                               action:@selector(startPresentationMode)
+//                     forControlEvents:UIControlEventTouchUpInside];
+//    
+//    [leftViewController.view addSubview:presentationModeButton];
+//    
+//    return leftViewController;
+//}
 
-- (UIViewController *)rightViewController
-{
-    UIViewController *rightViewController = [[UIViewController alloc] init];
-    rightViewController.view.backgroundColor = [UIColor redColor];
-    
-    UIButton *presentationModeButton = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetWidth([[UIScreen mainScreen] bounds])-200.0, 60.0, 180.0, 30.0)];
-    presentationModeButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
-    [presentationModeButton setTitle:@"Presentation Mode" forState:UIControlStateNormal];
-    [presentationModeButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [presentationModeButton addTarget:self.revealController
-                               action:@selector(startPresentationMode)
-                     forControlEvents:UIControlEventTouchUpInside];
-    
-    [rightViewController.view addSubview:presentationModeButton];
-    
-    return rightViewController;
-}
+//- (UIViewController *)rightViewController
+//{
+//    UIViewController *rightViewController = [[UIViewController alloc] init];
+//    rightViewController.view.backgroundColor = [UIColor redColor];
+//    
+//    UIButton *presentationModeButton = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetWidth([[UIScreen mainScreen] bounds])-200.0, 60.0, 180.0, 30.0)];
+//    presentationModeButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
+//    [presentationModeButton setTitle:@"Presentation Mode" forState:UIControlStateNormal];
+//    [presentationModeButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    [presentationModeButton addTarget:self.revealController
+//                               action:@selector(startPresentationMode)
+//                     forControlEvents:UIControlEventTouchUpInside];
+//    
+//    [rightViewController.view addSubview:presentationModeButton];
+//    
+//    return rightViewController;
+//}
 
 - (void)startPresentationMode
 {
