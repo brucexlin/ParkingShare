@@ -37,17 +37,19 @@
     
 }
 
-- (void)reservePressedWithParkingLot:(ParkingLotModel *)parkingLot {
+- (void)hudReservePressed:(LocationHUDView *)sender {
     
 }
 
-- (void)cancelPressedWithParkingLot:(ParkingLotModel *)parkingLot {
+- (void)hudCancelPressed:(LocationHUDView *)sender {
     
 }
 
-- (void)
+- (void)hudNavigatePressed:(LocationHUDView *)sender {
+    
+}
 
-- (void)moreInfoPressedWithParkingLot:(ParkingLotModel *)parkingLot {
+- (void)hudInfoPressed:(LocationHUDView *)sender {
     
 }
 
