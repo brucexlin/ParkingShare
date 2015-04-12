@@ -11,8 +11,7 @@
 
 @interface ParkingLotModel : NSObject
 
-@property (nonatomic) NSInteger parkingLotId;
-@property (strong, nonatomic) ReservationModel *userReservation;
+@property (strong, nonatomic) NSString *parkingLotId;
 @property (strong, nonatomic) NSString *address;
 @property (nonatomic) NSInteger availableSlots;
 @property (nonatomic) NSInteger hourlyRate;

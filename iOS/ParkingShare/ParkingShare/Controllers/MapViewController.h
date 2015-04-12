@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LocationHUDView.h"
 
-@interface MapViewController : UIViewController <UISearchBarDelegate>
+@interface MapViewController : UIViewController <UISearchBarDelegate, LocationHUDDelegate>
 
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (strong, nonatomic) IBOutlet UIButton *menuButton;

@@ -10,4 +10,6 @@
 
 @interface UserInfoModel : NSObject
 
+@property (strong, nonatomic) NSDictionary *userReservation;
+
 @end

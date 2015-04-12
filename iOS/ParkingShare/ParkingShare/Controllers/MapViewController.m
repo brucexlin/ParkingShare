@@ -9,6 +9,7 @@
 #import "MapViewController.h"
 #import "MasterViewController.h"
 #import "RootViewController.h"
+#import "ParkingLotModel.h"
 
 @interface MapViewController ()
 
@@ -33,6 +34,20 @@
 }
 
 - (void)listViewButtonPressed:(id)sender {
+    
+}
+
+- (void)reservePressedWithParkingLot:(ParkingLotModel *)parkingLot {
+    
+}
+
+- (void)cancelPressedWithParkingLot:(ParkingLotModel *)parkingLot {
+    
+}
+
+- (void)
+
+- (void)moreInfoPressedWithParkingLot:(ParkingLotModel *)parkingLot {
     
 }
 

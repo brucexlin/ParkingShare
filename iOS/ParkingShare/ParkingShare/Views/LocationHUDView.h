@@ -9,6 +9,18 @@
 #import <UIKit/UIKit.h>
 #import "XibView.h"
 #import "ParkingLotModel.h"
+#import "UserInfoModel.h"
+
+@class LocationHUDView;
+@protocol LocationHUDDelegate <NSObject>
+
+- (void)hudReservePressed:(LocationHUDView *)sender;
+- (void)hudCancelPressed:(LocationHUDView *)sender;
+- (void)hudNavigatePressed:(LocationHUDView *)sender;
+- (void)hudInfoPressed:(LocationHUDView *)sender;
+
+
+@end
 
 @interface LocationHUDView : XibView
 
@@ -17,5 +29,6 @@
 @property (strong, nonatomic) IBOutlet UIButton *navigateButton;
 @property (strong, nonatomic) IBOutlet UIButton *infoButton;
 
+- (instancetype)initWithParkingLot:(ParkingLotModel *)parkingLot userInfo:(UserInfoModel *)userInfo delegate:(id<LocationHUDDelegate>)delegate;
 
 @end
