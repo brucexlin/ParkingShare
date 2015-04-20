@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XibView.h"
 #import "ParkingLotModel.h"
 #import "UserInfoModel.h"
 
@@ -22,12 +21,12 @@
 
 @end
 
-@interface LocationHUDView : XibView
+@interface LocationHUDView : UIView
 
-@property (strong, nonatomic) IBOutlet UIButton *reserveButton;
-@property (strong, nonatomic) IBOutlet UIButton *cancelButton;
-@property (strong, nonatomic) IBOutlet UIButton *navigateButton;
-@property (strong, nonatomic) IBOutlet UIButton *infoButton;
+@property (strong, nonatomic) UIButton *reserveButton;
+@property (strong, nonatomic) UIButton *cancelButton;
+@property (strong, nonatomic) UIButton *navigateButton;
+@property (strong, nonatomic) UIButton *infoButton;
 
 - (instancetype)initWithParkingLot:(ParkingLotModel *)parkingLot userInfo:(UserInfoModel *)userInfo delegate:(id<LocationHUDDelegate>)delegate;
 

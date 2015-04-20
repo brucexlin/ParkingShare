@@ -42,12 +42,16 @@
 		8453319B1AD9F52A00957647 /* LeftMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845331991AD9F52A00957647 /* LeftMenuViewController.mm */; };
 		8453319F1AD9FB2600957647 /* angela.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8453319E1AD9FB2600957647 /* angela.jpeg */; };
 		845331C51ADA497600957647 /* LocationHUDView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845331C11ADA497600957647 /* LocationHUDView.mm */; };
-		845331C61ADA497600957647 /* LocationHUDView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845331C21ADA497600957647 /* LocationHUDView.xib */; };
 		845331C71ADA497600957647 /* XibView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845331C41ADA497600957647 /* XibView.mm */; };
 		845331CE1ADA498000957647 /* ParkingLotModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845331C91ADA498000957647 /* ParkingLotModel.mm */; };
 		845331CF1ADA498000957647 /* ReservationModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845331CB1ADA498000957647 /* ReservationModel.mm */; };
 		845331D01ADA498000957647 /* UserInfoModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845331CD1ADA498000957647 /* UserInfoModel.mm */; };
 		845331D31ADA49B100957647 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845331D21ADA49B100957647 /* RootViewController.m */; };
+		84BA4B011AE45374008C1B31 /* Cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA4AFD1AE45374008C1B31 /* Cancel.png */; };
+		84BA4B021AE45374008C1B31 /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA4AFE1AE45374008C1B31 /* Info.png */; };
+		84BA4B031AE45374008C1B31 /* Navigate.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA4AFF1AE45374008C1B31 /* Navigate.png */; };
+		84BA4B041AE45374008C1B31 /* Reserve.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA4B001AE45374008C1B31 /* Reserve.png */; };
+		84BA4B071AE45D65008C1B31 /* AppContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84BA4B061AE45D65008C1B31 /* AppContext.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +78,7 @@
 		402BEFFD1ADA082500D86BAF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		405406E81AE48AA800CB2605 /* FindMyCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindMyCarViewController.h; sourceTree = "<group>"; };
 		405406E91AE48AA800CB2605 /* FindMyCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindMyCarViewController.m; sourceTree = "<group>"; };
-		405406EA1AE48AA800CB2605 /* FindMyCarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindMyCarViewController.xib; sourceTree = "<group>"; };
+		405406EA1AE48AA800CB2605 /* FindMyCarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FindMyCarViewController.xib; path = ../Controllers/FindMyCarViewController.xib; sourceTree = "<group>"; };
 		845331021AD9DD0E00957647 /* ParkingShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845331061AD9DD0E00957647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		845331071AD9DD0E00957647 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -118,7 +122,6 @@
 		8453319E1AD9FB2600957647 /* angela.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angela.jpeg; sourceTree = "<group>"; };
 		845331C01ADA497600957647 /* LocationHUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationHUDView.h; path = ParkingShare/Views/LocationHUDView.h; sourceTree = SOURCE_ROOT; };
 		845331C11ADA497600957647 /* LocationHUDView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LocationHUDView.mm; path = ParkingShare/Views/LocationHUDView.mm; sourceTree = SOURCE_ROOT; };
-		845331C21ADA497600957647 /* LocationHUDView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LocationHUDView.xib; path = ParkingShare/Views/LocationHUDView.xib; sourceTree = SOURCE_ROOT; };
 		845331C31ADA497600957647 /* XibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XibView.h; path = ParkingShare/Views/XibView.h; sourceTree = SOURCE_ROOT; };
 		845331C41ADA497600957647 /* XibView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = XibView.mm; path = ParkingShare/Views/XibView.mm; sourceTree = SOURCE_ROOT; };
 		845331C81ADA498000957647 /* ParkingLotModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParkingLotModel.h; path = ParkingShare/Models/ParkingLotModel.h; sourceTree = SOURCE_ROOT; };
@@ -129,6 +132,12 @@
 		845331CD1ADA498000957647 /* UserInfoModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = UserInfoModel.mm; path = ParkingShare/Models/UserInfoModel.mm; sourceTree = SOURCE_ROOT; };
 		845331D11ADA49B100957647 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		845331D21ADA49B100957647 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		84BA4AFD1AE45374008C1B31 /* Cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cancel.png; sourceTree = "<group>"; };
+		84BA4AFE1AE45374008C1B31 /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info.png; sourceTree = "<group>"; };
+		84BA4AFF1AE45374008C1B31 /* Navigate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Navigate.png; sourceTree = "<group>"; };
+		84BA4B001AE45374008C1B31 /* Reserve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reserve.png; sourceTree = "<group>"; };
+		84BA4B051AE45D65008C1B31 /* AppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppContext.h; path = ParkingShare/Models/AppContext.h; sourceTree = SOURCE_ROOT; };
+		84BA4B061AE45D65008C1B31 /* AppContext.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppContext.mm; path = ParkingShare/Models/AppContext.mm; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +332,8 @@
 				845331CB1ADA498000957647 /* ReservationModel.mm */,
 				845331CC1ADA498000957647 /* UserInfoModel.h */,
 				845331CD1ADA498000957647 /* UserInfoModel.mm */,
+				84BA4B051AE45D65008C1B31 /* AppContext.h */,
+				84BA4B061AE45D65008C1B31 /* AppContext.mm */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -332,7 +343,6 @@
 			children = (
 				845331C01ADA497600957647 /* LocationHUDView.h */,
 				845331C11ADA497600957647 /* LocationHUDView.mm */,
-				845331C21ADA497600957647 /* LocationHUDView.xib */,
 				845331C31ADA497600957647 /* XibView.h */,
 				845331C41ADA497600957647 /* XibView.mm */,
 			);
@@ -342,7 +352,6 @@
 		845331831AD9E27900957647 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				405406EA1AE48AA800CB2605 /* FindMyCarViewController.xib */,
 				845331D11ADA49B100957647 /* RootViewController.h */,
 				845331D21ADA49B100957647 /* RootViewController.m */,
 				845331871AD9E32E00957647 /* MapViewController.h */,
@@ -361,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				400C1F3D1ADA0A0D0065F830 /* LeftMenuViewController.xib */,
+				405406EA1AE48AA800CB2605 /* FindMyCarViewController.xib */,
 				400C1F3E1ADA0A0D0065F830 /* MapViewController.xib */,
 				400C1F3F1ADA0A0D0065F830 /* MasterViewController.xib */,
 			);
@@ -370,6 +380,10 @@
 		8453319D1AD9FB2600957647 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				84BA4AFD1AE45374008C1B31 /* Cancel.png */,
+				84BA4AFE1AE45374008C1B31 /* Info.png */,
+				84BA4AFF1AE45374008C1B31 /* Navigate.png */,
+				84BA4B001AE45374008C1B31 /* Reserve.png */,
 				8453319E1AD9FB2600957647 /* angela.jpeg */,
 			);
 			path = Resources;
@@ -456,13 +470,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				845331191AD9DD0E00957647 /* LaunchScreen.xib in Resources */,
-				845331C61ADA497600957647 /* LocationHUDView.xib in Resources */,
+				84BA4B041AE45374008C1B31 /* Reserve.png in Resources */,
 				400C1F411ADA0A0D0065F830 /* MapViewController.xib in Resources */,
 				400C1F421ADA0A0D0065F830 /* MasterViewController.xib in Resources */,
+				84BA4B011AE45374008C1B31 /* Cancel.png in Resources */,
 				845331161AD9DD0E00957647 /* Images.xcassets in Resources */,
 				8453319F1AD9FB2600957647 /* angela.jpeg in Resources */,
 				405406EC1AE48AA800CB2605 /* FindMyCarViewController.xib in Resources */,
+				84BA4B021AE45374008C1B31 /* Info.png in Resources */,
 				400C1F401ADA0A0D0065F830 /* LeftMenuViewController.xib in Resources */,
+				84BA4B031AE45374008C1B31 /* Navigate.png in Resources */,
 				400C1F4A1ADA39930065F830 /* mapapi.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +515,7 @@
 				845331771AD9E1EE00957647 /* PKRevealControllerView.m in Sources */,
 				845331741AD9E1EE00957647 /* CALayer+PKConvenienceAnimations.m in Sources */,
 				845331791AD9E1EE00957647 /* PKLayerAnimator.m in Sources */,
+				84BA4B071AE45D65008C1B31 /* AppContext.mm in Sources */,
 				8453317C1AD9E1EE00957647 /* PKRevealController.m in Sources */,
 				845331731AD9E1EE00957647 /* CAAnimation+PKIdentifier.m in Sources */,
 				845331D31ADA49B100957647 /* RootViewController.m in Sources */,

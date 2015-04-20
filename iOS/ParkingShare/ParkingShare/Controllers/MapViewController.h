@@ -7,16 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LocationHUDView.h"
 #import <BaiduMapAPI/BMapKit.h>
+#import "LocationHUDView.h"
 
-@interface MapViewController : UIViewController <UISearchBarDelegate, LocationHUDDelegate, BMKMapViewDelegate>
+@interface MapViewController : UIViewController <UISearchBarDelegate, LocationHUDDelegate, BMKMapViewDelegate, BMKPoiSearchDelegate>
 
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (strong, nonatomic) IBOutlet BMKMapView *mapView;
+@property (strong, nonatomic) IBOutlet UIView *detailView;
+@property (strong, nonatomic) IBOutlet UILabel *parkingLotNameLabel;
+@property (strong, nonatomic) IBOutlet UILabel *slotCountLabel;
+@property (strong, nonatomic) IBOutlet UILabel *priceLabel;
+
 @property (strong, nonatomic) BMKMapManager *mapManager;
+@property (strong, nonatomic) BMKPoiSearch *poiSearch;
 @property (strong, nonatomic) IBOutlet UIButton *menuButton;
 @property (strong, nonatomic) IBOutlet UIButton *listViewButton;
+
+
 
 
 - (IBAction)menuButtonPressed:(id)sender;
