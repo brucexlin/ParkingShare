@@ -42,6 +42,7 @@
     
     self.mapView.trafficEnabled = YES;
     self.mapView.zoomLevel = MAP_DEFAULT_ZOOM_LEVEL;
+    self.detailView.transform = CGAffineTransformMakeTranslation(0, 80);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -89,6 +90,24 @@
     NSArray *parkingLots = @[plModel1, plModel2];
     
     [self.mapView addAnnotations:parkingLots];
+}
+
+- (void)mapView:(BMKMapView *)mapView didSelectAnnotationView:(BMKAnnotationView *)view {
+    ParkingLotModel *plModel = view.annotation;
+    self.parkingLotNameLabel.text = plModel.name;
+    self.slotCountLabel.text = [NSString stringWithFormat:@"%ld", (long)plModel.availableSlots];
+    self.priceLabel.text = [NSString stringWithFormat:@"%0.2f", (float)plModel.hourlyRate / 100];
+    
+    [UIView animateWithDuration:0.2f animations:^{
+        self.detailView.transform = CGAffineTransformIdentity;
+    }];
+}
+
+- (void)mapView:(BMKMapView *)mapView didDeselectAnnotationView:(BMKAnnotationView *)view {
+    ParkingLotModel *plModel = view.annotation;
+    [UIView animateWithDuration:0.2f animations:^{
+        self.detailView.transform = CGAffineTransformMakeTranslation(0, 80);
+    }];
 }
 
 - (BMKAnnotationView *)mapView:(BMKMapView *)mapView viewForAnnotation:(id<BMKAnnotation>)annotation {
