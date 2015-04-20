@@ -13,11 +13,13 @@
 @end
 
 @implementation LeftMenuViewController
+@synthesize menuData;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.menuListView.delegate = self;
     self.menuListView.dataSource = self;
+    menuData = [[NSMutableArray alloc] initWithObjects: @"我的账户", @"我的订单", @"寻找爱车", @"出租车位", @"系统设置", @"邀请好友", nil];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -27,13 +29,24 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return 6;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [[UITableViewCell alloc] init];
-    cell.textLabel.text = @"test";
+
+    cell.textLabel.text = [menuData objectAtIndex:indexPath.row];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIAlertView *messageAlert = [[UIAlertView alloc]
+                                 initWithTitle:@"Row Selected" message:@"You've selected a row" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    
+    // Display Alert Message
+    [messageAlert show];
+    
 }
 
 /*

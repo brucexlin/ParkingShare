@@ -11,5 +11,6 @@
 @interface LeftMenuViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UITableView *menuListView;
+@property (nonatomic,retain) NSMutableArray *menuData;
 
 @end
