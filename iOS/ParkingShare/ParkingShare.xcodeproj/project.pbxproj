@@ -40,7 +40,6 @@
 		8453319B1AD9F52A00957647 /* LeftMenuViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845331991AD9F52A00957647 /* LeftMenuViewController.mm */; };
 		8453319F1AD9FB2600957647 /* angela.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8453319E1AD9FB2600957647 /* angela.jpeg */; };
 		845331C51ADA497600957647 /* LocationHUDView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845331C11ADA497600957647 /* LocationHUDView.mm */; };
-		845331C61ADA497600957647 /* LocationHUDView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845331C21ADA497600957647 /* LocationHUDView.xib */; };
 		845331C71ADA497600957647 /* XibView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845331C41ADA497600957647 /* XibView.mm */; };
 		845331CE1ADA498000957647 /* ParkingLotModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845331C91ADA498000957647 /* ParkingLotModel.mm */; };
 		845331CF1ADA498000957647 /* ReservationModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845331CB1ADA498000957647 /* ReservationModel.mm */; };
@@ -118,7 +117,6 @@
 		8453319E1AD9FB2600957647 /* angela.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angela.jpeg; sourceTree = "<group>"; };
 		845331C01ADA497600957647 /* LocationHUDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationHUDView.h; path = ParkingShare/Views/LocationHUDView.h; sourceTree = SOURCE_ROOT; };
 		845331C11ADA497600957647 /* LocationHUDView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = LocationHUDView.mm; path = ParkingShare/Views/LocationHUDView.mm; sourceTree = SOURCE_ROOT; };
-		845331C21ADA497600957647 /* LocationHUDView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LocationHUDView.xib; path = ParkingShare/Views/LocationHUDView.xib; sourceTree = SOURCE_ROOT; };
 		845331C31ADA497600957647 /* XibView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XibView.h; path = ParkingShare/Views/XibView.h; sourceTree = SOURCE_ROOT; };
 		845331C41ADA497600957647 /* XibView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = XibView.mm; path = ParkingShare/Views/XibView.mm; sourceTree = SOURCE_ROOT; };
 		845331C81ADA498000957647 /* ParkingLotModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParkingLotModel.h; path = ParkingShare/Models/ParkingLotModel.h; sourceTree = SOURCE_ROOT; };
@@ -367,7 +365,6 @@
 				400C1F3D1ADA0A0D0065F830 /* LeftMenuViewController.xib */,
 				400C1F3E1ADA0A0D0065F830 /* MapViewController.xib */,
 				400C1F3F1ADA0A0D0065F830 /* MasterViewController.xib */,
-				845331C21ADA497600957647 /* LocationHUDView.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -465,7 +462,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				845331191AD9DD0E00957647 /* LaunchScreen.xib in Resources */,
-				845331C61ADA497600957647 /* LocationHUDView.xib in Resources */,
 				84BA4B041AE45374008C1B31 /* Reserve.png in Resources */,
 				400C1F411ADA0A0D0065F830 /* MapViewController.xib in Resources */,
 				400C1F421ADA0A0D0065F830 /* MasterViewController.xib in Resources */,
