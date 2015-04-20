@@ -46,6 +46,11 @@
 		845331CF1ADA498000957647 /* ReservationModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845331CB1ADA498000957647 /* ReservationModel.mm */; };
 		845331D01ADA498000957647 /* UserInfoModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845331CD1ADA498000957647 /* UserInfoModel.mm */; };
 		845331D31ADA49B100957647 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845331D21ADA49B100957647 /* RootViewController.m */; };
+		84BA4B011AE45374008C1B31 /* Cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA4AFD1AE45374008C1B31 /* Cancel.png */; };
+		84BA4B021AE45374008C1B31 /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA4AFE1AE45374008C1B31 /* Info.png */; };
+		84BA4B031AE45374008C1B31 /* Navigate.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA4AFF1AE45374008C1B31 /* Navigate.png */; };
+		84BA4B041AE45374008C1B31 /* Reserve.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA4B001AE45374008C1B31 /* Reserve.png */; };
+		84BA4B071AE45D65008C1B31 /* AppContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84BA4B061AE45D65008C1B31 /* AppContext.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +129,12 @@
 		845331CD1ADA498000957647 /* UserInfoModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = UserInfoModel.mm; path = ParkingShare/Models/UserInfoModel.mm; sourceTree = SOURCE_ROOT; };
 		845331D11ADA49B100957647 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		845331D21ADA49B100957647 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		84BA4AFD1AE45374008C1B31 /* Cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cancel.png; sourceTree = "<group>"; };
+		84BA4AFE1AE45374008C1B31 /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info.png; sourceTree = "<group>"; };
+		84BA4AFF1AE45374008C1B31 /* Navigate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Navigate.png; sourceTree = "<group>"; };
+		84BA4B001AE45374008C1B31 /* Reserve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Reserve.png; sourceTree = "<group>"; };
+		84BA4B051AE45D65008C1B31 /* AppContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppContext.h; path = ParkingShare/Models/AppContext.h; sourceTree = SOURCE_ROOT; };
+		84BA4B061AE45D65008C1B31 /* AppContext.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppContext.mm; path = ParkingShare/Models/AppContext.mm; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,6 +329,8 @@
 				845331CB1ADA498000957647 /* ReservationModel.mm */,
 				845331CC1ADA498000957647 /* UserInfoModel.h */,
 				845331CD1ADA498000957647 /* UserInfoModel.mm */,
+				84BA4B051AE45D65008C1B31 /* AppContext.h */,
+				84BA4B061AE45D65008C1B31 /* AppContext.mm */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -327,7 +340,6 @@
 			children = (
 				845331C01ADA497600957647 /* LocationHUDView.h */,
 				845331C11ADA497600957647 /* LocationHUDView.mm */,
-				845331C21ADA497600957647 /* LocationHUDView.xib */,
 				845331C31ADA497600957647 /* XibView.h */,
 				845331C41ADA497600957647 /* XibView.mm */,
 			);
@@ -355,6 +367,7 @@
 				400C1F3D1ADA0A0D0065F830 /* LeftMenuViewController.xib */,
 				400C1F3E1ADA0A0D0065F830 /* MapViewController.xib */,
 				400C1F3F1ADA0A0D0065F830 /* MasterViewController.xib */,
+				845331C21ADA497600957647 /* LocationHUDView.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -362,6 +375,10 @@
 		8453319D1AD9FB2600957647 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				84BA4AFD1AE45374008C1B31 /* Cancel.png */,
+				84BA4AFE1AE45374008C1B31 /* Info.png */,
+				84BA4AFF1AE45374008C1B31 /* Navigate.png */,
+				84BA4B001AE45374008C1B31 /* Reserve.png */,
 				8453319E1AD9FB2600957647 /* angela.jpeg */,
 			);
 			path = Resources;
@@ -449,11 +466,15 @@
 			files = (
 				845331191AD9DD0E00957647 /* LaunchScreen.xib in Resources */,
 				845331C61ADA497600957647 /* LocationHUDView.xib in Resources */,
+				84BA4B041AE45374008C1B31 /* Reserve.png in Resources */,
 				400C1F411ADA0A0D0065F830 /* MapViewController.xib in Resources */,
 				400C1F421ADA0A0D0065F830 /* MasterViewController.xib in Resources */,
+				84BA4B011AE45374008C1B31 /* Cancel.png in Resources */,
 				845331161AD9DD0E00957647 /* Images.xcassets in Resources */,
 				8453319F1AD9FB2600957647 /* angela.jpeg in Resources */,
+				84BA4B021AE45374008C1B31 /* Info.png in Resources */,
 				400C1F401ADA0A0D0065F830 /* LeftMenuViewController.xib in Resources */,
+				84BA4B031AE45374008C1B31 /* Navigate.png in Resources */,
 				400C1F4A1ADA39930065F830 /* mapapi.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +509,7 @@
 				845331771AD9E1EE00957647 /* PKRevealControllerView.m in Sources */,
 				845331741AD9E1EE00957647 /* CALayer+PKConvenienceAnimations.m in Sources */,
 				845331791AD9E1EE00957647 /* PKLayerAnimator.m in Sources */,
+				84BA4B071AE45D65008C1B31 /* AppContext.mm in Sources */,
 				8453317C1AD9E1EE00957647 /* PKRevealController.m in Sources */,
 				845331731AD9E1EE00957647 /* CAAnimation+PKIdentifier.m in Sources */,
 				845331D31ADA49B100957647 /* RootViewController.m in Sources */,

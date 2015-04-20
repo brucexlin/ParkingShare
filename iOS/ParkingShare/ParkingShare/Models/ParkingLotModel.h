@@ -7,14 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <BaiduMapAPI/BMapKit.h>
 #import "ReservationModel.h"
 
-@interface ParkingLotModel : NSObject
+
+@interface ParkingLotModel : NSObject <BMKAnnotation>
 
 @property (strong, nonatomic) NSString *parkingLotId;
+@property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *address;
+@property (strong, nonatomic) NSString *telephone;
+@property (nonatomic) CLLocationCoordinate2D coord;
 @property (nonatomic) NSInteger availableSlots;
 @property (nonatomic) NSInteger hourlyRate;
-
 
 @end

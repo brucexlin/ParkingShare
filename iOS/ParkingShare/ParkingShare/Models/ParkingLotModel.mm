@@ -10,4 +10,12 @@
 
 @implementation ParkingLotModel
 
+- (CLLocationCoordinate2D)coordinate {
+    return _coord;
+}
+
+- (NSString *)title {
+    return _name;
+}
+
 @end
