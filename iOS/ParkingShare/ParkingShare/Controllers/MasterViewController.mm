@@ -35,6 +35,7 @@
         
         [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:23.f / 255 green:126.f / 255 blue:1.f alpha:1.f]];
         [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+        [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObject:[UIColor whiteColor] forKey:NSForegroundColorAttributeName]];
     }
     return self;
 }
