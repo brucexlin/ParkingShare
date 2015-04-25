@@ -1,18 +1,18 @@
 //
-//  ReserveViewController.m
+//  MyOrderViewController.m
 //  ParkingShare
 //
 //  Created by Xinda Lin on 4/25/15.
 //  Copyright (c) 2015 Qing Sun. All rights reserved.
 //
 
-#import "ReserveViewController.h"
+#import "MyOrderViewController.h"
 
-@interface ReserveViewController ()
+@interface MyOrderViewController ()
 
 @end
 
-@implementation ReserveViewController
+@implementation MyOrderViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
