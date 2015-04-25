@@ -40,7 +40,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jfkdalgdajskghafljfkas;dfjas;dfasdjf" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Kp5-a1-SWp">
-                                    <rect key="frame" x="182" y="26" width="188" height="52"/>
+                                    <rect key="frame" x="182" y="29" width="188" height="52"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="52" id="McV-fK-Ndg"/>
                                     </constraints>
@@ -49,7 +49,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fc3-ch-cOx">
-                                    <rect key="frame" x="182" y="93" width="188" height="21"/>
+                                    <rect key="frame" x="182" y="96" width="188" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="21" id="JtV-JK-U6A"/>
                                     </constraints>
@@ -58,7 +58,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpd-fb-gEg">
-                                    <rect key="frame" x="182" y="114" width="188" height="27"/>
+                                    <rect key="frame" x="182" y="117" width="188" height="27"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="27" id="Qje-8A-qMH"/>
                                     </constraints>
@@ -74,11 +74,11 @@
                                 <constraint firstAttribute="width" constant="375" id="7ef-ah-SWt"/>
                                 <constraint firstItem="QgZ-dV-VpS" firstAttribute="leading" secondItem="37K-aP-NFq" secondAttribute="trailing" constant="2" id="7eh-8a-wN6"/>
                                 <constraint firstItem="37K-aP-NFq" firstAttribute="top" secondItem="MOY-x9-Gid" secondAttribute="top" id="9Ob-sy-Pcq"/>
-                                <constraint firstItem="Kp5-a1-SWp" firstAttribute="top" secondItem="MOY-x9-Gid" secondAttribute="top" constant="26" id="9RS-p5-P8e"/>
                                 <constraint firstItem="37K-aP-NFq" firstAttribute="leading" secondItem="MOY-x9-Gid" secondAttribute="leading" id="Gyk-4A-vg4"/>
                                 <constraint firstItem="Bpd-fb-gEg" firstAttribute="top" secondItem="fc3-ch-cOx" secondAttribute="bottom" id="KDT-3R-QvU"/>
                                 <constraint firstItem="QgZ-dV-VpS" firstAttribute="top" secondItem="MOY-x9-Gid" secondAttribute="top" constant="8" id="OBO-0M-IOC"/>
                                 <constraint firstAttribute="trailing" secondItem="Kp5-a1-SWp" secondAttribute="trailing" constant="5" id="TNN-wq-alc"/>
+                                <constraint firstItem="Kp5-a1-SWp" firstAttribute="top" secondItem="QgZ-dV-VpS" secondAttribute="bottom" id="Ves-tB-wa6"/>
                                 <constraint firstAttribute="trailing" secondItem="fc3-ch-cOx" secondAttribute="trailing" constant="5" id="WPR-XK-119"/>
                                 <constraint firstItem="Kp5-a1-SWp" firstAttribute="leading" secondItem="37K-aP-NFq" secondAttribute="trailing" constant="2" id="Xed-zN-cBB"/>
                                 <constraint firstAttribute="trailing" secondItem="Bpd-fb-gEg" secondAttribute="trailing" constant="5" id="Zmk-c3-fnX"/>
