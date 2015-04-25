@@ -94,10 +94,7 @@ titleForHeaderInSection:(NSInteger)section {
 }
 
 - (void)setUpWithParkingLotModel:(ParkingLotModel *)plModel {
-    self.navigationController.navigationBar.topItem.title = plModel.title;
-    self.navigationController.navigationBar.backgroundColor = [UIColor blackColor];
-    self.navigationController.navigationBar.translucent = NO;
-//    self.navigationItem.title = plModel.title;
+    self.navigationItem.title = plModel.title;
     self.addressLabel.text = plModel.address;
     self.telephoneLabel.text = plModel.telephone;
 }
