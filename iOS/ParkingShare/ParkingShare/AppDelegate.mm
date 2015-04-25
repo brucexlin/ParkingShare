@@ -24,8 +24,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     MasterViewController *mvc = [MasterViewController instance];
     
-    [mvc jumpToViewController:@"MapViewController"];
-    
     self.leftMenuController = [[LeftMenuViewController alloc] init];
     // Step 2: Instantiate.
     self.revealController = [RootViewController revealControllerWithFrontViewController:mvc

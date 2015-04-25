@@ -22,15 +22,19 @@
     static MasterViewController *instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        instance = [[MasterViewController alloc] init];
+        instance = [[MasterViewController alloc] initWithRootViewController:[[MapViewController alloc] init]];
     });
     return instance;
 }
 
-- (instancetype)init {
-    self = [super init];
+- (instancetype)initWithRootViewController:(UIViewController *)rootViewController {
+    self = [super initWithRootViewController:rootViewController];
     if (self) {
         self.viewControllerDict = [NSMutableDictionary dictionary];
+        self.navigationBar.topItem.title = @"地图";
+        
+        [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:23.f / 255 green:126.f / 255 blue:1.f alpha:1.f]];
+        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     }
     return self;
 }
@@ -50,13 +54,17 @@
     return viewController;
 }
 
-- (void)jumpToViewController:(NSString *)viewControllerName {
+- (void)jumpToViewControllerNamed:(NSString *)viewControllerName {
     UIViewController *viewController = [self getViewController:viewControllerName];
     if (viewController) {
-        [self.view addSubview:viewController.view];
-        [self.view bringSubviewToFront:viewController.view];
+        [self pushViewController:viewController animated:YES];
         self.currentViewController = viewController;
     }
+}
+
+- (void)jumpToViewController:(UIViewController *)viewController {
+    [self pushViewController:viewController animated:YES];
+    self.currentViewController = viewController;
 }
 
 - (void)viewDidLoad {

@@ -28,7 +28,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="44" id="cc8-ye-kqO"/>
                             </constraints>
-                            <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="barTintColor" red="0.09803922474" green="0.58039218189999997" blue="0.98431378599999997" alpha="1" colorSpace="deviceRGB"/>
                             <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             <connections>
                                 <outlet property="delegate" destination="-1" id="3NW-gI-2h4"/>
@@ -37,6 +37,7 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64Z-P6-mHI">
                             <rect key="frame" x="6" y="6" width="48" height="32"/>
                             <state key="normal" title="菜单">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -46,6 +47,7 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1b-5y-9Ar">
                             <rect key="frame" x="291" y="6" width="78" height="32"/>
                             <state key="normal" title="列表模式">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
@@ -53,7 +55,7 @@
                             </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.089135253302193407" green="0.49456778207721408" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="V1b-5y-9Ar" firstAttribute="top" secondItem="JZX-ba-oE5" secondAttribute="top" constant="6" id="Ec1-58-qt1"/>
                         <constraint firstAttribute="trailing" secondItem="V1b-5y-9Ar" secondAttribute="trailing" constant="6" id="F9I-uo-rD2"/>
@@ -76,7 +78,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             <color key="backgroundColor" red="0.58693544708029199" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </view>
-                        <view opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdO-2s-S06" userLabel="Detail View">
+                        <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdO-2s-S06" userLabel="Detail View">
                             <rect key="frame" x="6" y="542" width="363" height="55"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="空闲:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qw-sE-8ax">
@@ -170,6 +172,11 @@
                                 <constraint firstItem="eSZ-13-ail" firstAttribute="top" secondItem="AdO-2s-S06" secondAttribute="top" constant="17" id="xAA-1y-kGP"/>
                                 <constraint firstItem="3qw-sE-8ax" firstAttribute="leading" secondItem="eSZ-13-ail" secondAttribute="trailing" constant="4" id="ySy-rB-Cl9"/>
                             </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -184,7 +191,7 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.09803922474" green="0.58039218189999997" blue="0.98431378599999997" alpha="1" colorSpace="deviceRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="QBH-Wh-Vf5" secondAttribute="trailing" id="GBO-Ln-3KT"/>
                 <constraint firstItem="QBH-Wh-Vf5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="K5w-ll-xyb"/>

@@ -20,5 +20,10 @@
 @property (nonatomic) CLLocationCoordinate2D coord;
 @property (nonatomic) NSInteger availableSlots;
 @property (nonatomic) NSInteger hourlyRate;
+@property (nonatomic) BOOL openAllDay;
+@property (nonatomic) NSInteger openTimeHour;
+@property (nonatomic) NSInteger openTimeMinute;
+@property (nonatomic) NSInteger closeTimeHour;
+@property (nonatomic) NSInteger closeTimeMinute;
 
 @end

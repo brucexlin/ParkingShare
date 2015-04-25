@@ -10,12 +10,15 @@
 #import "MasterViewController.h"
 #import "RootViewController.h"
 #import "ParkingLotModel.h"
+#import "ParkingLotDetailViewController.h"
 #import "AppContext.h"
 #import <BaiduMapAPI/BMapKit.h>
 
 #define MAP_DEFAULT_ZOOM_LEVEL 17
 
 @interface MapViewController ()
+
+@property (strong, nonatomic) ParkingLotModel *selectedParkingLotModel;
 
 @end
 
@@ -45,22 +48,26 @@
     self.detailView.transform = CGAffineTransformMakeTranslation(0, 80);
 }
 
+- (BOOL)wantsFullScreenLayout {
+    return YES;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [BMKMapView didForeGround];
+    [MasterViewController instance].navigationBarHidden = YES;
     [self.mapView viewWillAppear];
     self.mapView.delegate = self;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
+    [MasterViewController instance].navigationBarHidden = NO;
     [self.mapView viewWillDisappear];
     self.mapView.delegate = nil;
     [self.mapManager stop];
-    [BMKMapView willBackGround];
 }
 
 
@@ -78,15 +85,25 @@
     plModel1.telephone = @"(010)64418903";
     plModel1.availableSlots = 16;
     plModel1.hourlyRate = 800;
+    plModel1.openAllDay = NO;
+    plModel1.openTimeHour = 9;
+    plModel1.openTimeMinute = 0;
+    plModel1.closeTimeHour = 19;
+    plModel1.closeTimeMinute = 0;
     plModel1.coord = CLLocationCoordinate2DMake(39.978324, 116.411791);
     
     ParkingLotModel *plModel2 = [[ParkingLotModel alloc] init];
     plModel2.parkingLotId = @"PL002";
     plModel2.name = @"安贞西里小区(东门)";
     plModel2.address = @"安贞西里小区";
-    plModel2.telephone = @"";
+    plModel2.telephone = @"(010)64418903";
     plModel2.availableSlots = 10;
     plModel2.hourlyRate = 950;
+    plModel2.openAllDay = NO;
+    plModel2.openTimeHour = 8;
+    plModel2.openTimeMinute = 30;
+    plModel2.closeTimeHour = 18;
+    plModel2.closeTimeMinute = 30;
     plModel2.coord = CLLocationCoordinate2DMake(39.979989, 116.407971);
     [self.mapView setCenterCoordinate:centerCoord animated:YES];
     
@@ -97,6 +114,7 @@
 
 - (void)mapView:(BMKMapView *)mapView didSelectAnnotationView:(BMKAnnotationView *)view {
     ParkingLotModel *plModel = view.annotation;
+    self.selectedParkingLotModel = plModel;
     self.parkingLotNameLabel.text = plModel.name;
     self.slotCountLabel.text = [NSString stringWithFormat:@"%ld", (long)plModel.availableSlots];
     self.priceLabel.text = [NSString stringWithFormat:@"%0.2f", (float)plModel.hourlyRate / 100];
@@ -107,6 +125,7 @@
 }
 
 - (void)mapView:(BMKMapView *)mapView didDeselectAnnotationView:(BMKAnnotationView *)view {
+    self.selectedParkingLotModel = nil;
     [UIView animateWithDuration:0.2f animations:^{
         self.detailView.transform = CGAffineTransformMakeTranslation(0, 80);
     }];
@@ -134,7 +153,9 @@
 }
 
 - (void)detailViewButtonPressed:(id)sender {
-    [[MasterViewController instance] jumpToViewController:@"ParkingLotDetailViewController"];
+    ParkingLotDetailViewController *parkingLotDetailViewController = VC(ParkingLotDetailViewController);
+    parkingLotDetailViewController.parkingLotModel = self.selectedParkingLotModel;
+    [[MasterViewController instance] jumpToViewController:parkingLotDetailViewController];
 }
 
 - (void)hudReservePressed:(LocationHUDView *)sender {

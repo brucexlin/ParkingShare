@@ -46,6 +46,7 @@
 - (void)setupView {
     [self setFrame:CGRectMake(0, 0, 105, 40)];
     self.backgroundColor = [UIColor colorWithRed:0.f green:0.f blue:0.f alpha:0.7f];
+    self.layer.cornerRadius = 5;
     self.reserveButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [_reserveButton setBackgroundImage:[UIImage imageNamed:@"Reserve.png"] forState:UIControlStateNormal];
     [_reserveButton setFrame:CGRectMake(5, 5, 30, 30)];

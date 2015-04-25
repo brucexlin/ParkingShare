@@ -11,7 +11,7 @@
 #define VC(X) \
 ((X *)[[MasterViewController instance] getViewController:@#X])
 
-@interface MasterViewController : UIViewController
+@interface MasterViewController : UINavigationController
 
 @property (readonly, strong, nonatomic) UIViewController *currentViewController;
 
@@ -21,7 +21,9 @@
 
 - (void)registerViewController:(UIViewController *)viewController;
 
-- (void)jumpToViewController:(NSString *)viewControllerName;
+- (void)jumpToViewControllerNamed:(NSString *)viewControllerName;
+
+- (void)jumpToViewController:(UIViewController *)viewControllerName;
 
 - (UIViewController *)getViewController:(NSString *)viewControllerName;
 
