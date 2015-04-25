@@ -7,6 +7,10 @@
 //
 
 #import "ParkingLotDetailViewController.h"
+#import "MasterViewController.h"
+#import "RootViewController.h"
+#import "ParkingLotModel.h"
+#import "ReserveViewController.h"
 
 typedef enum : NSUInteger {
     SectionRate,
@@ -81,6 +85,12 @@ titleForHeaderInSection:(NSInteger)section {
             break;
     }
     return nil;
+}
+
+
+- (IBAction)reserveButtonPressed:(id)sender {
+    ReserveViewController *reserveViewController = VC(ReserveViewController);
+    [[MasterViewController instance] jumpToViewController: reserveViewController];
 }
 
 - (void)didReceiveMemoryWarning {
