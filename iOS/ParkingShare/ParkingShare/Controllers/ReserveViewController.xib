@@ -11,7 +11,7 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meO-hR-oRe">
@@ -334,11 +334,11 @@
                     <exclude reference="ejL-QV-59Y"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="3ZS-qN-kY1"/>
-                    <exclude reference="5uZ-cf-30t"/>
                     <exclude reference="OsT-yD-QgK"/>
                     <exclude reference="b8L-18-2Tj"/>
                     <exclude reference="pSO-Yo-4qw"/>
+                    <exclude reference="3ZS-qN-kY1"/>
+                    <exclude reference="5uZ-cf-30t"/>
                     <exclude reference="RNm-z1-bD8"/>
                     <exclude reference="U8x-7q-4uk"/>
                     <exclude reference="cUu-IG-Wo3"/>
@@ -368,11 +368,11 @@
                     <include reference="ejL-QV-59Y"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="3ZS-qN-kY1"/>
-                    <include reference="5uZ-cf-30t"/>
                     <include reference="OsT-yD-QgK"/>
                     <include reference="b8L-18-2Tj"/>
                     <include reference="pSO-Yo-4qw"/>
+                    <include reference="3ZS-qN-kY1"/>
+                    <include reference="5uZ-cf-30t"/>
                     <include reference="RNm-z1-bD8"/>
                     <include reference="U8x-7q-4uk"/>
                     <include reference="cUu-IG-Wo3"/>
