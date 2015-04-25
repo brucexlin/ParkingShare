@@ -46,6 +46,8 @@
 		845331CF1ADA498000957647 /* ReservationModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845331CB1ADA498000957647 /* ReservationModel.mm */; };
 		845331D01ADA498000957647 /* UserInfoModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845331CD1ADA498000957647 /* UserInfoModel.mm */; };
 		845331D31ADA49B100957647 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845331D21ADA49B100957647 /* RootViewController.m */; };
+		84774DC31AEB470700F6C1E7 /* ParkingLotDetailViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84774DC11AEB470700F6C1E7 /* ParkingLotDetailViewController.mm */; };
+		84774DC61AEB473600F6C1E7 /* ParkingLotDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84774DC51AEB473600F6C1E7 /* ParkingLotDetailViewController.xib */; };
 		84BA4B011AE45374008C1B31 /* Cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA4AFD1AE45374008C1B31 /* Cancel.png */; };
 		84BA4B021AE45374008C1B31 /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA4AFE1AE45374008C1B31 /* Info.png */; };
 		84BA4B031AE45374008C1B31 /* Navigate.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BA4AFF1AE45374008C1B31 /* Navigate.png */; };
@@ -131,6 +133,9 @@
 		845331CD1ADA498000957647 /* UserInfoModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = UserInfoModel.mm; path = ParkingShare/Models/UserInfoModel.mm; sourceTree = SOURCE_ROOT; };
 		845331D11ADA49B100957647 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		845331D21ADA49B100957647 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		84774DC01AEB470700F6C1E7 /* ParkingLotDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkingLotDetailViewController.h; sourceTree = "<group>"; };
+		84774DC11AEB470700F6C1E7 /* ParkingLotDetailViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ParkingLotDetailViewController.mm; sourceTree = "<group>"; };
+		84774DC51AEB473600F6C1E7 /* ParkingLotDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ParkingLotDetailViewController.xib; path = ParkingShare/Controllers/ParkingLotDetailViewController.xib; sourceTree = SOURCE_ROOT; };
 		84BA4AFD1AE45374008C1B31 /* Cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cancel.png; sourceTree = "<group>"; };
 		84BA4AFE1AE45374008C1B31 /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info.png; sourceTree = "<group>"; };
 		84BA4AFF1AE45374008C1B31 /* Navigate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Navigate.png; sourceTree = "<group>"; };
@@ -362,6 +367,8 @@
 				845331991AD9F52A00957647 /* LeftMenuViewController.mm */,
 				405406E81AE48AA800CB2605 /* FindMyCarViewController.h */,
 				405406E91AE48AA800CB2605 /* FindMyCarViewController.m */,
+				84774DC01AEB470700F6C1E7 /* ParkingLotDetailViewController.h */,
+				84774DC11AEB470700F6C1E7 /* ParkingLotDetailViewController.mm */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -369,6 +376,7 @@
 		845331841AD9E2B300957647 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				84774DC51AEB473600F6C1E7 /* ParkingLotDetailViewController.xib */,
 				84BA4B0A1AE4C3A8008C1B31 /* FindMyCarViewController.xib */,
 				400C1F3D1ADA0A0D0065F830 /* LeftMenuViewController.xib */,
 				400C1F3E1ADA0A0D0065F830 /* MapViewController.xib */,
@@ -474,6 +482,7 @@
 				84BA4B041AE45374008C1B31 /* Reserve.png in Resources */,
 				400C1F411ADA0A0D0065F830 /* MapViewController.xib in Resources */,
 				400C1F421ADA0A0D0065F830 /* MasterViewController.xib in Resources */,
+				84774DC61AEB473600F6C1E7 /* ParkingLotDetailViewController.xib in Resources */,
 				84BA4B011AE45374008C1B31 /* Cancel.png in Resources */,
 				845331161AD9DD0E00957647 /* Images.xcassets in Resources */,
 				8453319F1AD9FB2600957647 /* angela.jpeg in Resources */,
@@ -511,6 +520,7 @@
 				845331CF1ADA498000957647 /* ReservationModel.mm in Sources */,
 				8453317A1AD9E1EE00957647 /* PKSequentialAnimation.m in Sources */,
 				8453310B1AD9DD0E00957647 /* AppDelegate.mm in Sources */,
+				84774DC31AEB470700F6C1E7 /* ParkingLotDetailViewController.mm in Sources */,
 				845331961AD9F04000957647 /* MasterViewController.mm in Sources */,
 				845331771AD9E1EE00957647 /* PKRevealControllerView.m in Sources */,
 				845331741AD9E1EE00957647 /* CALayer+PKConvenienceAnimations.m in Sources */,

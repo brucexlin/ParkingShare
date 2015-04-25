@@ -43,7 +43,7 @@
     UIViewController *viewController = [_viewControllerDict objectForKey:viewControllerName];
     if (!viewController) {
         if ([NSClassFromString(viewControllerName) isSubclassOfClass:[UIViewController class]]) {
-            viewController = [[MapViewController alloc] init];
+            viewController = [[NSClassFromString(viewControllerName) alloc] init];
             [_viewControllerDict setObject:viewController forKey:viewControllerName];
         }
     }

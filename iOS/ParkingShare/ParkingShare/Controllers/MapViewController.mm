@@ -51,6 +51,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [BMKMapView didForeGround];
     [self.mapView viewWillAppear];
     self.mapView.delegate = self;
 }
@@ -58,6 +59,8 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [self.mapView viewWillDisappear];
     self.mapView.delegate = nil;
+    [self.mapManager stop];
+    [BMKMapView willBackGround];
 }
 
 
@@ -104,7 +107,6 @@
 }
 
 - (void)mapView:(BMKMapView *)mapView didDeselectAnnotationView:(BMKAnnotationView *)view {
-    ParkingLotModel *plModel = view.annotation;
     [UIView animateWithDuration:0.2f animations:^{
         self.detailView.transform = CGAffineTransformMakeTranslation(0, 80);
     }];
@@ -124,11 +126,15 @@
 
 - (void)menuButtonPressed:(id)sender {
     RootViewController *rootViewController = VC(RootViewController);
-    [VC(RootViewController) showViewController:rootViewController.leftViewController];
+    [rootViewController showViewController:rootViewController.leftViewController];
 }
 
 - (void)listViewButtonPressed:(id)sender {
     
+}
+
+- (void)detailViewButtonPressed:(id)sender {
+    [[MasterViewController instance] jumpToViewController:@"ParkingLotDetailViewController"];
 }
 
 - (void)hudReservePressed:(LocationHUDView *)sender {

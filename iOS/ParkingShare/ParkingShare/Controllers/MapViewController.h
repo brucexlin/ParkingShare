@@ -24,12 +24,14 @@
 @property (strong, nonatomic) IBOutlet UIButton *menuButton;
 @property (strong, nonatomic) IBOutlet UIButton *listViewButton;
 
-
-
+//- (void)willJumpOutOfPage;
+//
+//- (void)didJumpIntoPage;
 
 - (IBAction)menuButtonPressed:(id)sender;
 
 - (IBAction)listViewButtonPressed:(id)sender;
 
+- (IBAction)detailViewButtonPressed:(id)sender;
 
 @end
