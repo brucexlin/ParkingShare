@@ -50,24 +50,42 @@
     self.reserveButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [_reserveButton setBackgroundImage:[UIImage imageNamed:@"Reserve.png"] forState:UIControlStateNormal];
     [_reserveButton setFrame:CGRectMake(5, 5, 30, 30)];
+    [_reserveButton addTarget:self action:@selector(reservePressed) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_reserveButton];
     self.cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [_cancelButton setBackgroundImage:[UIImage imageNamed:@"Cancel.png"] forState:UIControlStateNormal];
     [_cancelButton setFrame:CGRectMake(5, 5, 30, 30)];
+    [_cancelButton addTarget:self action:@selector(cancelPressed) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_cancelButton];
     self.navigateButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [_navigateButton setBackgroundImage:[UIImage imageNamed:@"Navigate.png"] forState:UIControlStateNormal];
     [_navigateButton setFrame:CGRectMake(40, 5, 30, 30)];
+    [_navigateButton addTarget:self action:@selector(navigatePressed) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_navigateButton];
     self.infoButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [_infoButton setBackgroundImage:[UIImage imageNamed:@"Info.png"] forState:UIControlStateNormal];
     [_infoButton setFrame:CGRectMake(75, 5, 30, 30)];
+    [_infoButton addTarget:self action:@selector(infoPressed) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_infoButton];
 }
 
-- (void)setupDelegate {
-    
+- (void)reservePressed {
+    [self.delegate hudReservePressed:self];
 }
+
+- (void)cancelPressed {
+    [self.delegate hudCancelPressed:self];
+}
+
+- (void)navigatePressed {
+    [self.delegate hudNavigatePressed:self];
+}
+
+- (void)infoPressed {
+    [self.delegate hudInfoPressed:self];
+}
+
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

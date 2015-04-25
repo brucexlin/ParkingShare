@@ -19,6 +19,7 @@
 @interface MapViewController ()
 
 @property (strong, nonatomic) ParkingLotModel *selectedParkingLotModel;
+@property (nonatomic) CLLocationCoordinate2D currentLocation;
 
 @end
 
@@ -42,7 +43,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.currentLocation = self.mapView.centerCoordinate;
     self.mapView.trafficEnabled = YES;
     self.mapView.zoomLevel = MAP_DEFAULT_ZOOM_LEVEL;
     self.detailView.transform = CGAffineTransformMakeTranslation(0, 80);
@@ -77,6 +78,8 @@
 }
 
 - (void)processSearch {
+    [self.mapView removeAnnotations:self.mapView.annotations];
+    
     CLLocationCoordinate2D centerCoord = CLLocationCoordinate2DMake(39.979613, 116.408477);
     ParkingLotModel *plModel1 = [[ParkingLotModel alloc] init];
     plModel1.parkingLotId = @"PL001";
@@ -167,11 +170,21 @@
 }
 
 - (void)hudNavigatePressed:(LocationHUDView *)sender {
-    
+    NSString *directionsRequest;
+    if ([[UIApplication sharedApplication] canOpenURL:
+         [NSURL URLWithString:@"comgooglemaps://"]]) {
+        directionsRequest = [NSString stringWithFormat: @"comgooglemaps://?daddr=%f,%f&saddr=%f,%f", self.selectedParkingLotModel.coordinate.latitude, self.selectedParkingLotModel.coordinate.longitude, self.currentLocation.latitude, self.currentLocation.longitude];
+    } else {
+        directionsRequest = [NSString stringWithFormat: @"http://maps.apple.com/maps?daddr=%f,%f&saddr=%f,%f", self.selectedParkingLotModel.coordinate.latitude, self.selectedParkingLotModel.coordinate.longitude, self.currentLocation.latitude, self.currentLocation.longitude];
+    }
+    NSURL *directionsURL = [NSURL URLWithString:directionsRequest];
+    [[UIApplication sharedApplication] openURL:directionsURL];
 }
 
 - (void)hudInfoPressed:(LocationHUDView *)sender {
-    
+    ParkingLotDetailViewController *parkingLotDetailViewController = VC(ParkingLotDetailViewController);
+    parkingLotDetailViewController.parkingLotModel = self.selectedParkingLotModel;
+    [[MasterViewController instance] jumpToViewController:parkingLotDetailViewController];
 }
 
 @end
