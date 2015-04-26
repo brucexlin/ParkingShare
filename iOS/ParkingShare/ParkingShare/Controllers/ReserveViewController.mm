@@ -124,6 +124,17 @@
 - (void)reservePressed:(id)sender {
     ReservationModel *reservation = [[ReservationModel alloc] initWithParkingLotId:self.parkingLotModel.parkingLotId startDate:self.startDate endDate:self.endDate hourlyRate:self.parkingLotModel.hourlyRate totalPrice:self.totalPrice];
     [[AppContext instance].userInfo addReservation:reservation];
+    UIAlertView *successView =  [[UIAlertView alloc] initWithTitle:@"谢谢惠顾"
+                                                           message:@"恭喜！您的订单已经生成！"
+                                                          delegate:self
+                                                 cancelButtonTitle:@"知道了"
+                                                 otherButtonTitles:nil];
+    [successView show];
+}
+
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 @end

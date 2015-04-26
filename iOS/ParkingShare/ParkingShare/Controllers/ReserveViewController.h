@@ -10,7 +10,7 @@
 #import "ParkingLotModel.h"
 #import "ParkingLotDisplayView.h"
 
-@interface ReserveViewController : UIViewController <UITextFieldDelegate>
+@interface ReserveViewController : UIViewController <UITextFieldDelegate, UIAlertViewDelegate>
 
 @property (strong, nonatomic) IBOutlet ParkingLotDisplayView *parkingLotDisplayView;
 @property (strong, nonatomic) IBOutlet UITextField *startDateField;

@@ -39,7 +39,7 @@
     res1.totalPrice = [res1.endDate timeIntervalSinceDate:res1.startDate] / oneHour * res1.hourlyRate;
     res1.parkingLotId = @"PL001";
     
-    self.userInfo.userReservation = @[res1];
+    self.userInfo.userReservation = [NSMutableArray arrayWithObject:res1];
 }
 
 

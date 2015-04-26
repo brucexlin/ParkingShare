@@ -242,6 +242,9 @@
                             <integer key="value" value="4"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="reservePressed:" destination="-2" eventType="touchUpInside" id="djJ-JM-rYR"/>
+                    </connections>
                 </button>
                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kZ-vT-HWy">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
