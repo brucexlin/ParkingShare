@@ -31,15 +31,15 @@
 
 - (void)loadDummyData {
     self.userInfo = [[UserInfoModel alloc] init];
-    NSMutableDictionary *dummyReservations = [NSMutableDictionary dictionary];
     ReservationModel *res1 = [[ReservationModel alloc] init];
     NSTimeInterval oneHour = 3600;
     res1.startDate = [NSDate dateWithTimeIntervalSinceNow:oneHour];
     res1.endDate = [NSDate dateWithTimeIntervalSinceNow:4 * oneHour];
     res1.hourlyRate = 800;
     res1.totalPrice = [res1.endDate timeIntervalSinceDate:res1.startDate] / oneHour * res1.hourlyRate;
-    [dummyReservations setObject:res1 forKey:@"PL001"];
-    self.userInfo.userReservation = dummyReservations;
+    res1.parkingLotId = @"PL001";
+    
+    self.userInfo.userReservation = @[res1];
 }
 
 

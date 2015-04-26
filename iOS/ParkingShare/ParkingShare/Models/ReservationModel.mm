@@ -10,6 +10,16 @@
 
 @implementation ReservationModel
 
-
+- (instancetype)initWithParkingLotId:(NSString *)parkingLotId startDate:(NSDate *)startDate endDate:(NSDate *)endDate hourlyRate:(NSInteger)hourlyRate totalPrice:(NSInteger)totalPrice {
+    self = [super init];
+    if (self) {
+        self.parkingLotId = parkingLotId;
+        self.startDate = startDate;
+        self.endDate = endDate;
+        self.hourlyRate = hourlyRate;
+        self.totalPrice = totalPrice;
+    }
+    return self;
+}
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "ReserveViewController.h"
+#import "ReservationModel.h"
+#import "AppContext.h"
 
 @interface ReserveViewController ()
 
@@ -17,6 +19,8 @@
 
 @property (strong, nonatomic) NSDate *startDate;
 @property (strong, nonatomic) NSDate *endDate;
+
+@property (nonatomic) NSInteger totalPrice;
 
 @end
 
@@ -92,6 +96,9 @@
     if (_startDate != startDate) {
         _startDate = startDate;
         self.startDateField.text = [self.dateFormatter stringFromDate:_startDate];
+        if ([self.endDate timeIntervalSinceDate:startDate] < 0) {
+            self.endDate = [self.startDate dateByAddingTimeInterval:3600];
+        }
         [self refreshInfo];
     }
 }
@@ -109,8 +116,14 @@
     self.totalTimeHourField.text = [NSString stringWithFormat:@"%d", (int)timeInterval / 3600];
     self.totalTimeMinuteField.text = [NSString stringWithFormat:@"%d", (int)timeInterval % 60];
     
+    self.totalPrice = (float)timeInterval / 3600.f * self.parkingLotModel.hourlyRate;
+    
     self.totalPriceField.text = [NSString stringWithFormat:@"%0.2f", (float)self.parkingLotModel.hourlyRate * timeInterval / 3600.f / 100];
 }
 
+- (void)reservePressed:(id)sender {
+    ReservationModel *reservation = [[ReservationModel alloc] initWithParkingLotId:self.parkingLotModel.parkingLotId startDate:self.startDate endDate:self.endDate hourlyRate:self.parkingLotModel.hourlyRate totalPrice:self.totalPrice];
+    [[AppContext instance].userInfo addReservation:reservation];
+}
 
 @end

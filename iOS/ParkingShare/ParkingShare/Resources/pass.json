@@ -1,0 +1,17 @@
+{
+    "formatVersion" : 1,
+    "passTypeIdentifier" : "pass.com.parkingshare.reservation",
+    "serialNumber" : "001",
+    "teamIdentifier" : "WKC3Q6QGU4",
+    "organizationName" : "ParkingShare LLC",
+    "description" : "Your Parking Reservation",
+    "logoText" : "ParkingShare LLC",
+    "foregroundColor" : "rgb(255, 255, 255)",
+    "backgroundColor" : "rgb(135, 129, 189)",
+    "labelColor" : "rgb(45, 54, 129)",
+	"barcode" : {
+        "message" : "Here is your reservation",
+        "format" : "PKBarcodeFormatPDF417",
+        "messageEncoding" : "iso-8859-1"
+    }
+}

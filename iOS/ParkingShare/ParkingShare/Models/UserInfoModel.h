@@ -7,9 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ReservationModel.h"
 
 @interface UserInfoModel : NSObject
 
-@property (strong, nonatomic) NSDictionary *userReservation;
+@property (strong, nonatomic) NSMutableArray *userReservation;
+
+- (void)addReservation:(ReservationModel *)reservation;
+
+- (ReservationModel *)reservationForParkingLot:(NSString *)parkingLotId;
 
 @end

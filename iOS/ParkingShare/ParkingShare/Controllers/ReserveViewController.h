@@ -26,4 +26,6 @@
 
 @property (weak, nonatomic) ParkingLotModel *parkingLotModel;
 
+- (IBAction)reservePressed:(id)sender;
+
 @end

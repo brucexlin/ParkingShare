@@ -31,7 +31,7 @@
     self = [self init];
     if (self) {
         self.delegate = delegate;
-        if ([userInfo.userReservation objectForKey:parkingLot.parkingLotId]) {
+        if ([userInfo reservationForParkingLot:parkingLot.parkingLotId]) {
             self.reserveButton.hidden = YES;
             self.cancelButton.hidden = NO;
         } else {
