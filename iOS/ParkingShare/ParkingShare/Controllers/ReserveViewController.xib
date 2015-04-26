@@ -35,7 +35,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您需要停车的时间：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgq-r1-ygf">
-                                    <rect key="frame" x="20" y="8" width="153" height="20.5"/>
+                                    <rect key="frame" x="20" y="8" width="153" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="153" id="Azb-Rg-uFb"/>
                                         <constraint firstAttribute="height" constant="21" id="uzX-yz-WiG"/>
@@ -48,7 +48,7 @@
                                     </variation>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="共计：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1P-8N-vwh">
-                                    <rect key="frame" x="20" y="175" width="51" height="20.5"/>
+                                    <rect key="frame" x="20" y="175" width="51" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="51" id="ESr-lQ-nZC"/>
                                         <constraint firstAttribute="height" constant="21" id="SuC-XS-PvT"/>
@@ -61,7 +61,7 @@
                                     </variation>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总价：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9t-wD-B0W">
-                                    <rect key="frame" x="20" y="271" width="51" height="20.5"/>
+                                    <rect key="frame" x="20" y="271" width="51" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="21" id="Yue-xO-F1u"/>
                                         <constraint firstAttribute="width" constant="51" id="r7e-Ca-hYX"/>
@@ -74,7 +74,7 @@
                                     </variation>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4T-YE-SWu">
-                                    <rect key="frame" x="20" y="305" width="170" height="26.5"/>
+                                    <rect key="frame" x="20" y="305" width="170" height="27"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="170" id="OLw-q9-3Xn"/>
                                         <constraint firstAttribute="height" constant="26.5" id="mOq-HU-1kU"/>
@@ -87,7 +87,7 @@
                                     </variation>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小时" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCE-MH-RYq">
-                                    <rect key="frame" x="120" y="218" width="45" height="20.5"/>
+                                    <rect key="frame" x="120" y="218" width="45" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="45" id="797-Zn-zVZ"/>
                                         <constraint firstAttribute="height" constant="21" id="cY2-aT-Sim"/>
@@ -100,7 +100,7 @@
                                     </variation>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分钟" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sew-4R-Zty">
-                                    <rect key="frame" x="226" y="218" width="45" height="20.5"/>
+                                    <rect key="frame" x="226" y="218" width="45" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="21" id="mxu-WS-Ada"/>
                                         <constraint firstAttribute="width" constant="45" id="qNo-yk-9EU"/>
@@ -170,7 +170,7 @@
                                     </variation>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="至" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyo-Ga-ONw">
-                                    <rect key="frame" x="249" y="56" width="17" height="20.5"/>
+                                    <rect key="frame" x="249" y="56" width="17" height="21"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="17" id="04P-Tn-yoD"/>
                                         <constraint firstAttribute="height" constant="21" id="F6y-d6-GHC"/>

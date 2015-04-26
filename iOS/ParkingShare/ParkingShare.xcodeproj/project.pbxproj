@@ -20,8 +20,9 @@
 		402BEFFE1ADA082500D86BAF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 402BEFFD1ADA082500D86BAF /* Security.framework */; };
 		405406EB1AE48AA800CB2605 /* FindMyCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 405406E91AE48AA800CB2605 /* FindMyCarViewController.m */; };
 		405406F91AEB84B800CB2605 /* ReserveViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 405406F71AEB84B800CB2605 /* ReserveViewController.mm */; };
-		405407001AEC40F300CB2605 /* MyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 405406FE1AEC40F300CB2605 /* MyOrderViewController.m */; };
+		405407001AEC40F300CB2605 /* MyOrderViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 405406FE1AEC40F300CB2605 /* MyOrderViewController.mm */; };
 		405407031AEC411500CB2605 /* MyOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 405407021AEC411500CB2605 /* MyOrderViewController.xib */; };
+		405407281AEC701D00CB2605 /* Loading.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 405407271AEC701D00CB2605 /* Loading.jpg */; };
 		845331081AD9DD0E00957647 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 845331071AD9DD0E00957647 /* main.m */; };
 		8453310B1AD9DD0E00957647 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8453310A1AD9DD0E00957647 /* AppDelegate.mm */; };
 		8453310E1AD9DD0E00957647 /* ParkingShare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8453310C1AD9DD0E00957647 /* ParkingShare.xcdatamodeld */; };
@@ -91,8 +92,9 @@
 		405406F61AEB84B800CB2605 /* ReserveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReserveViewController.h; sourceTree = "<group>"; };
 		405406F71AEB84B800CB2605 /* ReserveViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ReserveViewController.mm; sourceTree = "<group>"; };
 		405406FD1AEC40F300CB2605 /* MyOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOrderViewController.h; sourceTree = "<group>"; };
-		405406FE1AEC40F300CB2605 /* MyOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOrderViewController.m; sourceTree = "<group>"; };
+		405406FE1AEC40F300CB2605 /* MyOrderViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyOrderViewController.mm; sourceTree = "<group>"; };
 		405407021AEC411500CB2605 /* MyOrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyOrderViewController.xib; path = ParkingShare/Controllers/MyOrderViewController.xib; sourceTree = SOURCE_ROOT; };
+		405407271AEC701D00CB2605 /* Loading.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Loading.jpg; sourceTree = "<group>"; };
 		845331021AD9DD0E00957647 /* ParkingShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845331061AD9DD0E00957647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		845331071AD9DD0E00957647 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -393,7 +395,7 @@
 				405406F61AEB84B800CB2605 /* ReserveViewController.h */,
 				405406F71AEB84B800CB2605 /* ReserveViewController.mm */,
 				405406FD1AEC40F300CB2605 /* MyOrderViewController.h */,
-				405406FE1AEC40F300CB2605 /* MyOrderViewController.m */,
+				405406FE1AEC40F300CB2605 /* MyOrderViewController.mm */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -419,6 +421,7 @@
 				8464A5921AEC6A8E00473EB6 /* PL001.png */,
 				8464A5931AEC6A8E00473EB6 /* PL002.png */,
 				84BA4AFD1AE45374008C1B31 /* Cancel.png */,
+				405407271AEC701D00CB2605 /* Loading.jpg */,
 				84BA4AFE1AE45374008C1B31 /* Info.png */,
 				84BA4AFF1AE45374008C1B31 /* Navigate.png */,
 				84BA4B001AE45374008C1B31 /* Reserve.png */,
@@ -516,6 +519,7 @@
 				84774DC61AEB473600F6C1E7 /* ParkingLotDetailViewController.xib in Resources */,
 				84BA4B011AE45374008C1B31 /* Cancel.png in Resources */,
 				845331161AD9DD0E00957647 /* Images.xcassets in Resources */,
+				405407281AEC701D00CB2605 /* Loading.jpg in Resources */,
 				8453319F1AD9FB2600957647 /* angela.jpeg in Resources */,
 				8464A5971AEC6B7500473EB6 /* ParkingLotDisplayView.xib in Resources */,
 				8464A5941AEC6A8E00473EB6 /* PL001.png in Resources */,
@@ -567,7 +571,7 @@
 				845331731AD9E1EE00957647 /* CAAnimation+PKIdentifier.m in Sources */,
 				845331D31ADA49B100957647 /* RootViewController.m in Sources */,
 				845331081AD9DD0E00957647 /* main.m in Sources */,
-				405407001AEC40F300CB2605 /* MyOrderViewController.m in Sources */,
+				405407001AEC40F300CB2605 /* MyOrderViewController.mm in Sources */,
 				8453318A1AD9E32E00957647 /* MapViewController.mm in Sources */,
 				845331CE1ADA498000957647 /* ParkingLotModel.mm in Sources */,
 			);

@@ -7,6 +7,9 @@
 //
 
 #import "LeftMenuViewController.h"
+#import "RootViewController.h"
+#import "MasterViewController.h"
+#import "MyOrderViewController.h"
 
 
 @interface LeftMenuViewController ()
@@ -42,11 +45,16 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIAlertView *messageAlert = [[UIAlertView alloc]
-                                 initWithTitle:@"Row Selected" message:@"You've selected a row" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     
-    // Display Alert Message
-    [messageAlert show];
+    RootViewController *rootViewController = VC(RootViewController);
+    [rootViewController showViewController:rootViewController.frontViewController];
+    
+    switch (indexPath.row) {
+        case 1:
+            MyOrderViewController *myOrderViewController = VC(MyOrderViewController);
+            [[MasterViewController instance] jumpToViewController: myOrderViewController];
+            break;
+    }
     
 }
 
