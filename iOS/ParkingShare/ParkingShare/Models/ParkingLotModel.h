@@ -26,4 +26,6 @@
 @property (nonatomic) NSInteger closeTimeHour;
 @property (nonatomic) NSInteger closeTimeMinute;
 
++ (ParkingLotModel *)parkingLotModelWithId:(NSString *)parkingLotId;
+
 @end

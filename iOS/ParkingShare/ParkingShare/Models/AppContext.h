@@ -12,7 +12,6 @@
 @interface AppContext : NSObject
 
 @property (strong, nonatomic) UserInfoModel *userInfo;
-@property (strong, nonatomic) NSArray *cachedSearchResult;
 
 + (AppContext *)instance;
 
