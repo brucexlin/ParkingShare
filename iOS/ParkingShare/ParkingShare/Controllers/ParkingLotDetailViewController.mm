@@ -90,6 +90,8 @@ titleForHeaderInSection:(NSInteger)section {
 
 - (IBAction)reserveButtonPressed:(id)sender {
     ReserveViewController *reserveViewController = VC(ReserveViewController);
+    [MasterViewController instance].navigationBar.topItem.title = @"详情";
+    reserveViewController.parkingLotModel = self.parkingLotModel;
     [[MasterViewController instance] jumpToViewController: reserveViewController];
 }
 
@@ -99,14 +101,13 @@ titleForHeaderInSection:(NSInteger)section {
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [self setUpWithParkingLotModel:self.parkingLotModel];
+    [self setupView];
     [self.detailTableView reloadData];
 }
 
-- (void)setUpWithParkingLotModel:(ParkingLotModel *)plModel {
-    self.navigationItem.title = plModel.title;
-    self.addressLabel.text = plModel.address;
-    self.telephoneLabel.text = plModel.telephone;
+- (void)setupView {
+    self.navigationItem.title = self.parkingLotModel.title;
+    [self.parkingLotDisplayView setupWithParkingLot:self.parkingLotModel];
 }
 
 /*

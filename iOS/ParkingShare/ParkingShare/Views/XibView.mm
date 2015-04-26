@@ -26,6 +26,14 @@
     return self;
 }
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self loadFromXib];
+        self.frame = self.loadedView.frame;
+    }
+    return self;
+}
 
 - (void)loadFromXib {
     UINib *nib = [UINib nibWithNibName:NSStringFromClass([self class]) bundle:nil];

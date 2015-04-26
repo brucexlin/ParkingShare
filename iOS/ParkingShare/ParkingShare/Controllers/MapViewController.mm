@@ -12,6 +12,7 @@
 #import "ParkingLotModel.h"
 #import "ParkingLotDetailViewController.h"
 #import "AppContext.h"
+#import "ReserveViewController.h"
 #import <BaiduMapAPI/BMapKit.h>
 
 #define MAP_DEFAULT_ZOOM_LEVEL 17
@@ -162,7 +163,9 @@
 }
 
 - (void)hudReservePressed:(LocationHUDView *)sender {
-    
+    ReserveViewController *reserveViewController = VC(ReserveViewController);
+    reserveViewController.parkingLotModel = self.selectedParkingLotModel;
+    [[MasterViewController instance] jumpToViewController:reserveViewController];
 }
 
 - (void)hudCancelPressed:(LocationHUDView *)sender {

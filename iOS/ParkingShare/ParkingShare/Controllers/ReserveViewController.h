@@ -7,7 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ParkingLotModel.h"
+#import "ParkingLotDisplayView.h"
 
-@interface ReserveViewController : UIViewController
+@interface ReserveViewController : UIViewController <UITextFieldDelegate>
+
+@property (strong, nonatomic) IBOutlet ParkingLotDisplayView *parkingLotDisplayView;
+@property (strong, nonatomic) IBOutlet UITextField *startDateField;
+@property (strong, nonatomic) IBOutlet UITextField *endDateField;
+
+
+@property (strong, nonatomic) IBOutlet UILabel *totalTimeHourField;
+@property (strong, nonatomic) IBOutlet UILabel *totalTimeMinuteField;
+
+@property (strong, nonatomic) IBOutlet UILabel *totalPriceField;
+
+@property (strong, nonatomic) IBOutlet UIButton *dismissPickerButton;
+
+@property (weak, nonatomic) ParkingLotModel *parkingLotModel;
 
 @end

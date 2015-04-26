@@ -8,13 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "ParkingLotModel.h"
+#import "ParkingLotDisplayView.h"
 
 @interface ParkingLotDetailViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UITableView *detailTableView;
-@property (strong, nonatomic) IBOutlet UIImageView *imageView;
-@property (strong, nonatomic) IBOutlet UILabel *addressLabel;
-@property (strong, nonatomic) IBOutlet UILabel *telephoneLabel;
+@property (strong, nonatomic) IBOutlet ParkingLotDisplayView *parkingLotDisplayView;
 
 @property (weak, nonatomic) ParkingLotModel *parkingLotModel;
 
