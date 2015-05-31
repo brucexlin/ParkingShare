@@ -10,7 +10,7 @@
 #import <BaiduMapAPI/BMapKit.h>
 #import "LocationHUDView.h"
 
-@interface MapViewController : UIViewController <UISearchBarDelegate, LocationHUDDelegate, BMKMapViewDelegate, BMKPoiSearchDelegate>
+@interface MapViewController : UIViewController <UISearchBarDelegate, LocationHUDDelegate, BMKMapViewDelegate, BMKPoiSearchDelegate, BMKLocationServiceDelegate>
 
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (strong, nonatomic) IBOutlet BMKMapView *mapView;
@@ -21,14 +21,18 @@
 
 @property (strong, nonatomic) BMKMapManager *mapManager;
 @property (strong, nonatomic) BMKPoiSearch *poiSearch;
+@property (strong, nonatomic) BMKLocationService *locService;
 @property (strong, nonatomic) IBOutlet UIButton *menuButton;
 @property (strong, nonatomic) IBOutlet UIButton *listViewButton;
 
-//- (void)willJumpOutOfPage;
-//
-//- (void)didJumpIntoPage;
 
 - (IBAction)menuButtonPressed:(id)sender;
+
+- (IBAction)locateButtonPressed:(id)sender;
+
+- (IBAction)zoomInButtonPressed:(id)sender;
+
+- (IBAction)zoomOutButtonPressed:(id)sender;
 
 - (IBAction)listViewButtonPressed:(id)sender;
 

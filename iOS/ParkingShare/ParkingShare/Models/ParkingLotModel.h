@@ -17,7 +17,7 @@
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *address;
 @property (strong, nonatomic) NSString *telephone;
-@property (nonatomic) CLLocationCoordinate2D coord;
+@property (nonatomic) CLLocationCoordinate2D coordinate;
 @property (nonatomic) NSInteger availableSlots;
 @property (nonatomic) NSInteger hourlyRate;
 @property (nonatomic) BOOL openAllDay;

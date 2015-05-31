@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapListViewController">
+            <connections>
+                <outlet property="sortingControl" destination="Vvf-yR-I3v" id="njd-ad-mAF"/>
+                <outlet property="tableView" destination="hiq-vT-TfM" id="piC-4F-V4r"/>
+                <outlet property="view" destination="WiN-BY-e5y" id="83O-qm-AMI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="WiN-BY-e5y">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZd-zG-U8C">
+                    <rect key="frame" x="0.0" y="64" width="375" height="30"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Vvf-yR-I3v">
+                            <rect key="frame" x="75" y="1" width="225" height="29"/>
+                            <segments>
+                                <segment title="距离"/>
+                                <segment title="价格"/>
+                                <segment title="评价"/>
+                            </segments>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Vvf-yR-I3v" secondAttribute="bottom" constant="1" id="SaT-w2-3Ft"/>
+                        <constraint firstAttribute="trailing" secondItem="Vvf-yR-I3v" secondAttribute="trailing" constant="75" id="Uja-wt-Ond"/>
+                        <constraint firstItem="Vvf-yR-I3v" firstAttribute="top" secondItem="eZd-zG-U8C" secondAttribute="top" constant="1" id="fDm-cU-O6b"/>
+                        <constraint firstAttribute="height" constant="30" id="fEt-5J-RGL"/>
+                        <constraint firstItem="Vvf-yR-I3v" firstAttribute="leading" secondItem="eZd-zG-U8C" secondAttribute="leading" constant="75" id="s3I-wd-HkJ"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hiq-vT-TfM">
+                    <rect key="frame" x="0.0" y="102" width="375" height="565"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="hiq-vT-TfM" firstAttribute="leading" secondItem="WiN-BY-e5y" secondAttribute="leading" id="Hpu-09-QNp"/>
+                <constraint firstItem="eZd-zG-U8C" firstAttribute="top" secondItem="WiN-BY-e5y" secondAttribute="top" constant="64" id="SZn-Ti-ihI"/>
+                <constraint firstAttribute="bottom" secondItem="hiq-vT-TfM" secondAttribute="bottom" id="aHI-zQ-t6f"/>
+                <constraint firstAttribute="trailing" secondItem="eZd-zG-U8C" secondAttribute="trailing" id="j81-aQ-Xui"/>
+                <constraint firstItem="eZd-zG-U8C" firstAttribute="leading" secondItem="WiN-BY-e5y" secondAttribute="leading" id="nf4-hi-Dho"/>
+                <constraint firstItem="hiq-vT-TfM" firstAttribute="top" secondItem="eZd-zG-U8C" secondAttribute="bottom" constant="8" id="qGH-tg-8dC"/>
+                <constraint firstAttribute="trailing" secondItem="hiq-vT-TfM" secondAttribute="trailing" id="rRK-bK-xva"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>

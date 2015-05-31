@@ -10,6 +10,8 @@
 
 @implementation ParkingLotModel
 
+@synthesize coordinate = _coordinate;
+
 + (ParkingLotModel *)parkingLotModelWithId:(NSString *)parkingLotId {
     static NSDictionary *dict = nil;
     static dispatch_once_t onceToken;
@@ -26,7 +28,7 @@
         plModel1.openTimeMinute = 0;
         plModel1.closeTimeHour = 19;
         plModel1.closeTimeMinute = 0;
-        plModel1.coord = CLLocationCoordinate2DMake(39.978324, 116.411791);
+        plModel1.coordinate = CLLocationCoordinate2DMake(39.978324, 116.411791);
         
         ParkingLotModel *plModel2 = [[ParkingLotModel alloc] init];
         plModel2.parkingLotId = @"PL002";
@@ -40,15 +42,11 @@
         plModel2.openTimeMinute = 30;
         plModel2.closeTimeHour = 18;
         plModel2.closeTimeMinute = 30;
-        plModel2.coord = CLLocationCoordinate2DMake(39.979989, 116.407971);
+        plModel2.coordinate = CLLocationCoordinate2DMake(39.979989, 116.407971);
         dict = @{plModel1.parkingLotId : plModel1,
                  plModel2.parkingLotId : plModel2};
     });
     return [dict objectForKey:parkingLotId];
-}
-
-- (CLLocationCoordinate2D)coordinate {
-    return _coord;
 }
 
 - (NSString *)title {

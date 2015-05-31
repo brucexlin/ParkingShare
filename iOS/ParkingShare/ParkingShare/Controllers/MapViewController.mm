@@ -11,6 +11,7 @@
 #import "RootViewController.h"
 #import "ParkingLotModel.h"
 #import "ParkingLotDetailViewController.h"
+#import "MapListViewController.h"
 #import "AppContext.h"
 #import "ReserveViewController.h"
 #import <BaiduMapAPI/BMapKit.h>
@@ -21,6 +22,8 @@
 
 @property (strong, nonatomic) ParkingLotModel *selectedParkingLotModel;
 @property (nonatomic) CLLocationCoordinate2D currentLocation;
+
+@property (strong, nonatomic) NSArray *searchResult;
 
 @end
 
@@ -35,9 +38,17 @@
         if (!ret) {
             NSLog(@"manager start failed!");
         }
+        
         self.poiSearch = [[BMKPoiSearch alloc] init];
         self.poiSearch.delegate = self;
+        
+        [BMKLocationService setLocationDesiredAccuracy:kCLLocationAccuracyBest];
+        [BMKLocationService setLocationDistanceFilter:100.f];
+        self.locService = [[BMKLocationService alloc] init];
+        self.locService.delegate = self;
+        [self.locService startUserLocationService];
         self.searchBar.delegate = self;
+        
     }
     return self;
 }
@@ -47,6 +58,7 @@
     self.currentLocation = self.mapView.centerCoordinate;
     self.mapView.trafficEnabled = YES;
     self.mapView.zoomLevel = MAP_DEFAULT_ZOOM_LEVEL;
+    self.mapView.showsUserLocation = YES;
     self.detailView.transform = CGAffineTransformMakeTranslation(0, 80);
 }
 
@@ -86,9 +98,9 @@
     ParkingLotModel *plModel2 = [ParkingLotModel parkingLotModelWithId:@"PL002"];
     [self.mapView setCenterCoordinate:centerCoord animated:YES];
     
-    NSArray *parkingLots = @[plModel1, plModel2];
+    self.searchResult = @[plModel1, plModel2];
     
-    [self.mapView addAnnotations:parkingLots];
+    [self.mapView addAnnotations:self.searchResult];
 }
 
 - (void)mapView:(BMKMapView *)mapView didSelectAnnotationView:(BMKAnnotationView *)view {
@@ -128,7 +140,9 @@
 }
 
 - (void)listViewButtonPressed:(id)sender {
-    
+    MapListViewController *mapListViewController = VC(MapListViewController);
+    mapListViewController.parkingLotsList = self.searchResult;
+    [[MasterViewController instance] jumpToViewController:mapListViewController];
 }
 
 - (void)detailViewButtonPressed:(id)sender {
@@ -163,6 +177,25 @@
     ParkingLotDetailViewController *parkingLotDetailViewController = VC(ParkingLotDetailViewController);
     parkingLotDetailViewController.parkingLotModel = self.selectedParkingLotModel;
     [[MasterViewController instance] jumpToViewController:parkingLotDetailViewController];
+}
+
+- (void)locateButtonPressed:(id)sender {
+    BMKUserLocation *loc = self.locService.userLocation;
+    [self.mapView updateLocationData:loc];
+    [self.mapView setCenterCoordinate:loc.location.coordinate animated:YES];
+}
+
+- (void)zoomInButtonPressed:(id)sender {
+    [self.mapView zoomIn];
+}
+
+- (void)zoomOutButtonPressed:(id)sender {
+    [self.mapView zoomOut];
+}
+
+- (void)didUpdateBMKUserLocation:(BMKUserLocation *)userLocation {
+    [self.mapView updateLocationData:userLocation];
+    [self.mapView setCenterCoordinate:userLocation.location.coordinate animated:YES];
 }
 
 @end

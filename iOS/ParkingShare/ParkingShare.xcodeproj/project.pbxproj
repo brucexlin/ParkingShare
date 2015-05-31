@@ -50,6 +50,8 @@
 		845331CF1ADA498000957647 /* ReservationModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845331CB1ADA498000957647 /* ReservationModel.mm */; };
 		845331D01ADA498000957647 /* UserInfoModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845331CD1ADA498000957647 /* UserInfoModel.mm */; };
 		845331D31ADA49B100957647 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845331D21ADA49B100957647 /* RootViewController.m */; };
+		845D02901B1B8CB60037C0EA /* MapListViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 845D028E1B1B8CB60037C0EA /* MapListViewController.mm */; };
+		845D02931B1B8CCE0037C0EA /* MapListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845D02921B1B8CCE0037C0EA /* MapListViewController.xib */; };
 		8464A58D1AEC454000473EB6 /* ParkingLotDisplayView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8464A58C1AEC454000473EB6 /* ParkingLotDisplayView.mm */; };
 		8464A5911AEC463A00473EB6 /* ReserveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8464A5901AEC463A00473EB6 /* ReserveViewController.xib */; };
 		8464A5941AEC6A8E00473EB6 /* PL001.png in Resources */ = {isa = PBXBuildFile; fileRef = 8464A5921AEC6A8E00473EB6 /* PL001.png */; };
@@ -148,6 +150,9 @@
 		845331CD1ADA498000957647 /* UserInfoModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = UserInfoModel.mm; path = ParkingShare/Models/UserInfoModel.mm; sourceTree = SOURCE_ROOT; };
 		845331D11ADA49B100957647 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		845331D21ADA49B100957647 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		845D028D1B1B8CB60037C0EA /* MapListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapListViewController.h; sourceTree = "<group>"; };
+		845D028E1B1B8CB60037C0EA /* MapListViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MapListViewController.mm; sourceTree = "<group>"; };
+		845D02921B1B8CCE0037C0EA /* MapListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapListViewController.xib; path = ParkingShare/Controllers/MapListViewController.xib; sourceTree = SOURCE_ROOT; };
 		8464A58B1AEC454000473EB6 /* ParkingLotDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParkingLotDisplayView.h; path = ParkingShare/Views/ParkingLotDisplayView.h; sourceTree = SOURCE_ROOT; };
 		8464A58C1AEC454000473EB6 /* ParkingLotDisplayView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ParkingLotDisplayView.mm; path = ParkingShare/Views/ParkingLotDisplayView.mm; sourceTree = SOURCE_ROOT; };
 		8464A5901AEC463A00473EB6 /* ReserveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReserveViewController.xib; path = ParkingShare/Controllers/ReserveViewController.xib; sourceTree = SOURCE_ROOT; };
@@ -396,6 +401,8 @@
 				405406F71AEB84B800CB2605 /* ReserveViewController.mm */,
 				405406FD1AEC40F300CB2605 /* MyOrderViewController.h */,
 				405406FE1AEC40F300CB2605 /* MyOrderViewController.mm */,
+				845D028D1B1B8CB60037C0EA /* MapListViewController.h */,
+				845D028E1B1B8CB60037C0EA /* MapListViewController.mm */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -403,6 +410,7 @@
 		845331841AD9E2B300957647 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
+				845D02921B1B8CCE0037C0EA /* MapListViewController.xib */,
 				8464A5961AEC6B7500473EB6 /* ParkingLotDisplayView.xib */,
 				8464A5901AEC463A00473EB6 /* ReserveViewController.xib */,
 				405407021AEC411500CB2605 /* MyOrderViewController.xib */,
@@ -513,6 +521,7 @@
 				8464A5951AEC6A8E00473EB6 /* PL002.png in Resources */,
 				84BA4B0B1AE4C3A8008C1B31 /* FindMyCarViewController.xib in Resources */,
 				845331191AD9DD0E00957647 /* LaunchScreen.xib in Resources */,
+				845D02931B1B8CCE0037C0EA /* MapListViewController.xib in Resources */,
 				84BA4B041AE45374008C1B31 /* Reserve.png in Resources */,
 				400C1F411ADA0A0D0065F830 /* MapViewController.xib in Resources */,
 				400C1F421ADA0A0D0065F830 /* MasterViewController.xib in Resources */,
@@ -549,6 +558,7 @@
 				845331C71ADA497600957647 /* XibView.mm in Sources */,
 				845331751AD9E1EE00957647 /* NSObject+PKBlocks.m in Sources */,
 				845331C51ADA497600957647 /* LocationHUDView.mm in Sources */,
+				845D02901B1B8CB60037C0EA /* MapListViewController.mm in Sources */,
 				8453310E1AD9DD0E00957647 /* ParkingShare.xcdatamodeld in Sources */,
 				8453319B1AD9F52A00957647 /* LeftMenuViewController.mm in Sources */,
 				845331761AD9E1EE00957647 /* UIViewController+PKRevealController.m in Sources */,
